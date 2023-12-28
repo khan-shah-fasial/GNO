@@ -1,106 +1,213 @@
-@php
-$practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)->orderBy('id', 'asc')->get();
-@endphp
-<!--------------------footer start----------------------------->
-<!------------------ Contact Start -------------------------->
-@if(count($practice_Area) > 1)
-<section class="links">
-    <div class="container">
-       <div class="row">
-         @foreach ($practice_Area as $row)
-            @php
-               $sub_cate = DB::table('practice_areas')->where('parent_id', $row->id)->limit('10')->get();
-            @endphp
-
-            @if(count($sub_cate) > 0)
-                  <div class="col-md-3 first_links">
-                     <ul class="links_url"data-aos="fade-up" data-aos-once="true">
-                        @foreach ($sub_cate as $item)
-                           <li data-aos="fade-up" data-aos-once="true"><a href="{{ url(route('practicearea-detail', ['slug' => $item->slug] )) }}">{{ $item->title }}</a></li>
-                        @endforeach
-                     </ul>
-                  </div>
-            @endif
-         @endforeach
-
-       </div>
-    </div>
- </section>
- @endif
- <!--links End-->
- 
- <!--Footer Start-->
- <footer>
-    <div class="container">
-       <div class="row">
+ <section class="footer">
+      <div class="container">
+        <div class="row">
           <div class="col-md-12">
-             <div class="footer_btn_container">
-                <a href="{{ url(route('contact')) }}" class="footer_btn" data-aos="fade-up" data-aos-once="true">Online Payment</a>
-             </div>
-             <ul class="footer_links">
-                <li><span data-aos="fade-up" data-aos-once="true">© 2023 SEEDLING</span></li>
-                <li>|</li>
-                <li><a href="{{ url(route('terms')) }}"data-aos="fade-up" data-aos-once="true"> TERMS OF USE </a></li>
-                <li>|</li>
-                <li><a href="{{ url(route('privacy-policy')) }}" data-aos="fade-up" data-aos-once="true">PRIVACY POLICY</a></li>
-                <li>|</li>
-                <li><a href="{{ url(route('refund-policy')) }}" data-aos="fade-up" data-aos-once="true">REFUND POLICY</a></li>
-                <li>|</li>
-                <li><a href="#"data-aos="fade-up" data-aos-once="true">SITE MAP</a></li>
-                <li>|</li>
-                <li><a href="https://nexgeno.in/"data-aos="fade-up" data-aos-once="true"> SITE BY NEXGENO</a></li>
-             </ul>
-             <p class="footer_desc mb-lg-0 mb-5 pb-lg-0 pb-2">
-             SEEDLING ASSOCIATES PRIVATE LIMITED | CIN U69100DL2022PTC403662 | <span> Registered Office : Plot No. 66, First Floor, Okhla Industrial Estate, #TheHub Okhla Phase III, New Delhi 110020, India  | </span> Phone Number : +91 7428899959 | <span> Email Address: admin@seedlingassociates.com </span>
-             </p>
+            <div class="footer_top">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="info_wrapper">
+                    <h3 class="title" data-aos-once="true" data-aos="fade-up">
+                      Connect To Quran Teacher
+                    </h3>
+                    <p class="mt-3 mb-0 fs-16" data-aos-once="true" data-aos="fade-up">
+                      <b>Garib Nawaz Online Academy</b>
+                    </p>
+                    <p data-aos-once="true" data-aos="fade-up">
+                     Faizane Madina Dawateislami India 50,Tantanpura Street Khadak Police Chowki Mumbai 400009 Maharshtra
+                    </p>
+                    <p class="mb-0">
+                      <a
+                        href="mailto:support@gnoa.in"
+                        data-aos-once="true"
+                        data-aos="fade-up"
+                        >support@gnoa.in</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        href="tel:+91-9137589497"
+                        data-aos-once="true"
+                        data-aos="fade-up"
+                        >+91-9137589497</a
+                      >
+                    </p>
+                    <div
+                      class="social_icon"
+                      data-aos-once="true"
+                      data-aos="fade-up"
+                    >
+                      <a href=""><i class="fa-brands fa-facebook"></i></a>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                      <a href="">Lets get together</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <h3 class="title" data-aos-once="true" data-aos="fade-up">
+                    Quick Links
+                  </h3>
+                  <ul data-aos-once="true" data-aos="fade-up">
+                    <li><a href="about-us">About Us </a></li>
+                    <li><a href="courses">Courses </a></li>
+                    <li><a href="our-branche">Our Branche </a></li>
+                    <li><a href="career">Career</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <h3 class="title" data-aos-once="true" data-aos="fade-up">
+                    Quick Links
+                  </h3>
+                  <ul data-aos-once="true" data-aos="fade-up">
+                    <li>
+                      <a href="contact-us">Contact Us </a>
+                    </li>
+                    <li>
+                      <a href="privacy-policy"> Privacy Policy </a>
+                    </li>
+                    <li>
+                      <a href="term-condition"> Term & Condition </a>
+                    </li>
+                   
+                    <li>
+                      <a href="donation.php"> Donation</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h3 class="title">Enquire Now</h3>
+                  <form action="">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                    />
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                    />
+                   <select class="form-select select_drp_image" aria-label="Default select example">
+                <option selected value="">Allah ka paigham</option>
+                <option value="">Aaiye urdu seekhiye</option>
+                <option value="">Aqaid wa Fiqh</option>
+                <option value="">Bahare Shariyat</option>
+                <option value="">Aqeeda e khatme Nubuwwat</option>
+                <option value="">Arabic Grammar</option>
+                <option value="">Faizan e Hadith</option>
+                <option value="">Faizan e Hajj</option>
+                <option value="">Faizan e Namaz</option>
+                <option value="">Faizan e Tariqat</option>
+                <option value="">Faizan e Tasawwuf</option>
+                <option value="">Faizan e Umra</option>
+                <option value="">Faizan e Farz Uloom</option>
+                <option value="">Imamat</option>
+                <option value="">kitabullah ki batein</option>
+                <option value="">Nahvi Tarkib</option>
+                <option value="">Pre Aalim</option>
+                <option value="">Qurani Sooraton ka ta’aruf</option>
+                <option value="">Roze ke ahkam</option>
+                <option value="">Sarfi Tehqiq</option>
+                <option value="">Seerat e Mustafa</option>
+                <option value="">Shamail e Mustafa</option>
+                <option value="">Sunnat e Nikah</option>
+                <option value="">Tafseer</option>
+                <option value="">Tafseer Siratul Jinan</option>
+                <option value="">Taharat</option>
+                <option value="">Tajheez o takfeen</option>
+                <option value="">Tarjamatul Quran</option>
+                <option value="">Zakat</option>
+                <option value="">Qurbani</option>
+              </select>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Message"
+                    />
+                    <div class="text-center">
+                      <button>Send a Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-       </div>
+          <hr />
+          <div class="col-md-12">
+            <div class="footer_bottom">
+              <a href="https://online.gnoa.in/apex/f?p=104:11::::::" target="_blank"><button>Registration</button></a>
+              <p>Copyright © 2023 GNOA. All rights reserved.</p>
+              <p>Design By <a target="_blank" href="https://nexgeno.in/">NEXGENO</a></p>
+              <button>Donation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="popup_wrapper">
+            <button
+              type="button"
+              class="close_btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="/img/remove.png" alt="" />
+            </button>
+
+            <h3 class="text-center">Enquire Now</h3>
+            <form>
+              <input
+                type="text"
+                placeholder="Write Your Name"
+                class="form-control"
+              />
+              <input
+                type="text"
+                placeholder="Write Your Email ID"
+                class="form-control"
+              />
+              <input
+                type="text"
+                placeholder="Write Your Mobile Number"
+                class="form-control"
+              />
+              <select class="form-select">
+                <option value="">Course</option>
+                <option value="">Course</option>
+                <option value="">Course</option>
+                <option value="">Course</option>
+              </select>
+              <select class="form-select">
+                <option value="">Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="fix_footer">
-        <a href="https://api.whatsapp.com/send?phone={{ get_settings('whatsapp') }}">
-            <span>
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </span>
-            <span>
-                Whatsapp
-            </span>
-        </a>
-        <a href="tel:+{{ get_settings('mobile') }}">
-            <span>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-            </span>
-            <span>
-                Call
-            </span>
-        </a>
-        <a href="mailto:{{ get_settings('email') }}">
-            <span>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-            </span>
-            <span>
-                Mail
-            </span>
-        </a>
-        <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
-                        <!-- <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
-                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" /> -->
-                        <span>Request a Consultation</span>
-                    </button>
 
-    </div>
- </footer>
+<!--whatsapp chat open-->
 
-
- <!--Footer Ends-->
-
- <!-- whatsapp -->
- <div class="">
+<div class="desktop_whatsapp">
                 <div class="whatsapp_chat_support wcs_fixed_right" id="example_1">
 
                     <div class="wcs_button wcs_button_circle">
                         <div class="whatsapp_blink">
                             <span href="" class="btn-whatsapp-pulse">
-                                <span class="fa fa-whatsapp"></span>
+                                <span class="fa-brands fa-whatsapp"></span>
                             </span>
                         </div>
                     </div>
@@ -113,17 +220,16 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                             <span class="fa fa-close"></span>
                         </div>
                         <div class="wcs_popup_header">
-                            <strong>Hi, I am interested in consulting with you regarding this service</strong>
+                            <strong>Need Help? Chat with us</strong>
                             <br>
                             <div class="wcs_popup_header_description">Click one of our representatives below</div>
                         </div>
                         <div class="wcs_popup_person_container">
-                            <div class="wcs_popup_person" data-number="+{{ get_settings('whatsapp') }}">
-                                <div class="wcs_popup_person_img"><img src="/assets/frontend/images/wh.png"
+                            <div class="wcs_popup_person" data-number="+91-9137589497">
+                                <div class="wcs_popup_person_img"><img src="assets/frontend/images/favicon.ico"
                                         alt="" /></div>
                                 <div class="wcs_popup_person_content">
-                                    <div class="wcs_popup_person_name">Seedling  Associates</div>
-                                    <div class="wcs_popup_person_description">Seedling  Associates</div>
+                                    <div class="wcs_popup_person_name">Garib Nawaz Online Academy</div>
                                     <div class="wcs_popup_person_status">I'm Online</div>
                                 </div>
                             </div>
@@ -131,87 +237,9 @@ $practice_Area = DB::table('practice_areas')->where('parent_id', null)->limit(4)
                     </div>
                 </div>
             </div>
- <!-- whatsapp -->
- 
- 
- <!--Popup End-->
-@include('frontend.component.ask_popup_form')
- <!-- <div
-       class="modal fade"
-       id="pay-modal"
-       tabindex="-1"
-       role="dialog"
-       aria-labelledby="modal-title"
-       aria-hidden="true"
-     >
-       <div class="modal-dialog modal-dialog-centered" role="document">
-         <div class="modal-content">
-           <div class="d-flex justify-content-end pt-4 pe-4">
-             <button
-               type="button"
-               class="btn-close"
-               data-bs-dismiss="modal"
-               aria-label="Close"
-             ></button>
-           </div>
- 
-           <div class="popup">
-             <div
-               class="contact_form_container d-flex align-items-center justify-content-center"
-             >
-               <form>
-                 <p class="contact_form_logo fs-6 fw-bolder mb-3">
-                   HAVE ANY QUESTION suhail
-                 </p>
-                 <h4 class="contact_form_heading fs-2 fw-bolder mb-1">
-                   Make A Payment
-                 </h4>
-                 <p class="mb-3">
-                   There are many variations of passages of lorem available..
-                 </p>
-                 <input type="text" placeholder="Name" class="form-control" />
-                 <div
-                   class="contact_email_phone d-flex align-items-center gap-3"
-                 >
-                   <input type="text" placeholder="Email" class="form-control" />
-                   <input type="text" placeholder="Phone" class="form-control" />
-                 </div>
-                 <select class="contact_form_select form-select">
-                   <option value="">Services</option>
-                   <option value="">Option !</option>
-                   <option value="">Option !</option>
-                   <option value="">Option !</option>
-                 </select>
-                 <button class="contact_form_button">Send</button>
-               </form>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div> -->
-
-
-
-
-<!------------------ footer End -------------------------->
-
-
-<!--start cookies code-->
-<!----<div class="cookies_section">
-    <div class="title-box">
-        <i class="bx bx-cookie"></i>
-        <h3> <img src="/assets/frontend/images/cookie_image.png" alt="" /> Cookies Consent</h3>
-    </div>
-    <div class="info">
-        <p>
-            We use cookies to help you navigate efficiently and perform certain functions. You will find detailed
-            information about all cookies under each consent category below.
-            <a href="{{url(route('cookie-policy'))}}"> Read more...</a>
-        </p>
-    </div>
-    <div class="buttons">
-        <button class="cookies_button" id="cookieAccept">Accept</button>
-        <button class="cookies_button">Decline</button>
-    </div>
-</div> --->
-<!--end cookies code-->
+            
+            <!--whatsapp chat close-->
+    
+    
+   
+	

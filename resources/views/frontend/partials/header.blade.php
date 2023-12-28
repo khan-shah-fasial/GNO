@@ -1,541 +1,223 @@
-
-<!--------------Header start----------------->
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!----=========topbar=========----->
-
-                @include('frontend.partials.topbar')
-
-                <!----=========End topbar=========----->
-
-                <div class="bottom_nav_links d-flex align-items-center gap-4">
-                    <ul class="nav_links d-flex align-items-center gap-4 list-unstyled mb-0">
-                        <li>
-                            @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 1)
-                                    ->get();
-                            @endphp
-                            <a href=#>
-                                <span style="color:#e13333;" > Start a Business</span>
-
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                @endif
-
-                            </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </ul>
-                            @endif
-
-                        </li>
-                        <li>
-                            @php
-                            $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 2)
-                                    ->get();
-                            @endphp
-                            <a href=#>
-                                <span style="color:#e13333;">License & Registration</span>
-
-                                @if(count($subcate) > 0)        
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                @endif
-
-                            </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        
-                                        <ul>
-
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-
-                                        
-                                    </div>
-
-
-                                </div>
-                            </ul>
-                            @endif
-
-                        </li>
-                        <li>
-                            @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 3)
-                                    ->get();
-                            @endphp
-                            <a href=#>
-                                <span style="color:#e13333;">Taxation</span>
-
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                @endif
-
-
-                            </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
-
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </ul>
-                            @endif
-
-                        </li>
-                        <li>
-                            @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 4)
-                                    ->get();
-                            @endphp
-                            <a href=#>
-                                <span style="color:#e13333;">IPR & Gaming Services </span>
-
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                @endif
-
-
-                            </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </ul>
-                            @endif
-
-                        </li>
-                        <li>
-                            @php
-                            $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 5)
-                                    ->get();
-                            @endphp
-                            <a href=#>
-                                <span style="color:#e13333;">NGO Compliances</span>
-
-                                @if(count($subcate) > 0)
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                @endif
-
-                            </a>
-                            @if(count($subcate) > 0)
-                            <ul class="dropdown">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul>
-
-                                            @foreach ($subcate as $iteams)
-                                                <li>
-                                                    <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                                        {{ $iteams->title }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </ul>
-                            @endif
-
-                        </li>
-
-
-                    </ul>
-                    <button class="nav_button" data-bs-toggle="modal" data-bs-target="#ask-modal" type="button">
-                        <img src="{{ asset('/assets/frontend/images/nav_btn_icon.png') }}" alt="" />
-                        <img src="{{ asset('/assets/frontend/images/ask_hover_btn.png') }}" alt="" />
-                        <span>Request a Consultation</span>
-                    </button>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <nav>
-                <div class="logo">
-                    <a href="/">
-                        <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" />
-                    </a>
-                </div>
-                <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox" />
-                <label class="m-menu__toggle" for="menu">
-                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000"
-                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </label>
-                <label class="m-menu__overlay" for="menu"></label>
-
-                <div class="m-menu">
-                    <div class="m-menu__header">
-                        <div class="logo">
-                            <a href="index.php">
-                                <img src="{{ asset('/assets/frontend/images/logo.png') }}" alt="logo" />
-                            </a>
+ <header>
+         <div class="top_bar">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="wrapper">
+                        <div class="new_list pdleft40">
+                           <p>
+                              اَلْحَمْدُ لِلّٰہِ رَبِّ الْعٰلَمِیْنَ وَ الصَّلٰوۃُ
+                              وَالسَّلَامُ علٰی سَیِّدِ الْمُرْسَلِیْنَ اَمَّا بَعْدُ
+                              فَاَعُوْذُ بِاللّٰہِ مِنَ الشَیْطٰنِ الرَّجِیْمِ ؕ بِسْمِ
+                              اللّٰہِ الرَّحْمٰنِ الرَّ حِیْمِ
+                           </p>
                         </div>
-                        <label class="m-menu__toggle" for="menu">
-                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                        </label>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="{{ url(route('index')) }}">Home</a>
-                        </li>
-                        <li>
-                            <a href="{{ url(route('blog')) }}">Blog</a>
-                        </li>
-                        <li>
-                            <a href="{{ url(route('contact')) }}">Contact Us</a>
-                        </li>
-
-
-                        <li>
-                        <div class="sidebar_item">
-                            
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">Start a Business 
-                    <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" /></a>
-                    
-                    <div class="sub-menu">
-                            @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 1)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
+                        <div class="button_area pdrght40">
+                           <ul>
+                              <li id="google_translate_element"></li>
+                              <li><a href="https://online.gnoa.in/apex/f?p=103:LOGIN_DESKTOP:5123813546755:::::" target="_blank"> Student Login </a></li>
+                              <li><a href="https://online.gnoa.in/apex/f?p=104:11::::::" target="_blank">Registration</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--top_bar Section -->
+         <!--header Section-->
+         <section class="menu_bar">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <!-- Container wrapper -->
+                     <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                     <i class="fas fa-bars"></i>
+                     </button>
+                     <!-- Collapsible wrapper -->
+                     <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+                        <!-- Left links -->
+                        <ul class="navbar-nav me-auto ps-lg-0 pdleft40">
+                           <li class="nav-item">
+                              <a href="index.php">
+                              <img  class="logo_width" src="assets/frontend/images/logo.png" alt="" />
+                              </a>
+                           </li>
+                          
+                      
+                        </ul>
                         
-                    </div>
-                </div>
-                        </li>
-                        <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
-                        License & Registration <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 2)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
-                        </li>
-                        </li>
-                        <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
+                        
+                        <ul class="navbar-nav ms-auto ps-lg-0">
+                         
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.php">Home</a>
+                           </li>
+                           <li class="nav-item dropdown dropdown-hover position-static">
+                              <a class="nav-link dropdown-toggle" href="courses.php" id="navbarDropdown" role="button"
+                                 data-mdb-toggle="dropdown" aria-expanded="false">
+                              Courses
+                              </a>
+                              <!-- Dropdown menu -->
+                              <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                 border-top-right-radius: 0;
+                                 ">
+                                 <div class="row">
+                                    <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                       <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action">Allah ka paigham</a>
+                                        <a href="" class="list-group-item list-group-item-action">Aaiye urdu seekhiye</a>
+                                        <a href="" class="list-group-item list-group-item-action">Aqaid wa Fiqh</a>
+                                        <a href="" class="list-group-item list-group-item-action">Bahare Shariyat</a>
+                                        <a href="" class="list-group-item list-group-item-action">Aqeeda W khatme Nubuwwat</a>
+                                        <a href="" class="list-group-item list-group-item-action">Seerat E Mustafa</a>
+                                        <a href="" class="list-group-item list-group-item-action">Shamail E Mustafa</a>
+                                        <a href="" class="list-group-item list-group-item-action">Zakat</a>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                       <div class="list-group list-group-flush">
+                                            <a href="" class="list-group-item list-group-item-action">Arabic Grammar</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Hadith</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Hajj</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Namaz</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Tariqat</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Tasawwuf</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Umra</a>
+                                            <a href="" class="list-group-item list-group-item-action">Faizan E Farz Uloom</a>
+                                            
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-2 mb-3 mb-md-0">
+                                       <div class="list-group list-group-flush">
+                                            
+                                            <a href="" class="list-group-item list-group-item-action">Sunnat E Nikah</a>
+                                            <a href="" class="list-group-item list-group-item-action">Tafseer</a>
+                                            <a href="" class="list-group-item list-group-item-action">Qurbani</a>
+                                            <a href="" class="list-group-item list-group-item-action">Imamat</a>
+                                            <a href="" class="list-group-item list-group-item-action">kitabullah ki batein</a>
+                                            <a href="" class="list-group-item list-group-item-action">Tafseer Siratul Jinan</a>
+                                            <a href="" class="list-group-item list-group-item-action">Taharat</a>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-2">
+                                       <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action">Nahvi Tarkib</a>
+                                        <a href="" class="list-group-item list-group-item-action">Pre Aalim</a>
+                                        <a href="" class="list-group-item list-group-item-action">Qurani Sooraton ka ta’aruf</a>
+                                        <a href="" class="list-group-item list-group-item-action">Roze ke ahkam</a>
+                                        <a href="" class="list-group-item list-group-item-action">Sarfi Tehqiq</a>
+                                        <a href="" class="list-group-item list-group-item-action">Tajheez o takfeen</a>
+                                        <a href="" class="list-group-item list-group-item-action">Tarjamatul Quran</a>
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-lg-3">
+                                       <img class="menu_img" src="assets/frontend/images/dhanu3.jpeg">
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about-us">About Us</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="our-branche">Our Branche</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact-us">Contact Us</a>
+                           </li>
+                           <li class="nav-item login_btn pdrght40">
+                              <a class="nav-link" href="donation.php">Donation</a>
+                           </li>
+                           <!-- Navbar dropdown -->
+                        </ul>
+                        <!-- Left links -->
+                     </div>
+                  <!-- Container wrapper -->
+               </nav>
+            </div>
+         </section>
+      </header>
+      
+      
+      
+      <div class="mobile_header">
+      <div class="wrapper_menu">
+  <nav>
+    <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+    <label class="m-menu__toggle" for="menu">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#007695" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </label>
+    <label class="m-menu__overlay" for="menu"></label>
 
-                    Taxation
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 3)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
-                        </li>
-                        </li>
-                        <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
-
-                    IPR & Gaming Services 
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 4)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
-                        </li>
-                        </li>
-                        <li>
-                        <div class="sidebar_item">
-                    <a href=#  class="sub-btn d-flex align-items-center justify-content-between">
-
-                    NGO Compliances <img src="{{ asset('/assets/frontend/images/down.png') }}" alt="down Arrow" />
-                    </a>
-                    
-                    <div class="sub-menu">
-                    @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 5)
-                                    ->get();
-                                @endphp
-                                @foreach ($subcate as $iteams)
-                                  <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                      {{ $iteams->title }}
-                                  </a>
-                                @endforeach
-                    </div>
-                </div>
-                        </li>
-                        <!-- <li>
-                            <label class="a-label__chevron" for="item-1">
-                                Start a Business
-                            </label>
-                            <input type="checkbox" id="item-1" name="item-1" class="m-menu__checkbox" />
-                            <div class="m-menu">
-                                <div class="m-menu__header">
-                                    <label class="m-menu__toggle" for="item-1">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                            stroke-linejoin="arcs">
-                                            <path d="M19 12H6M12 5l-7 7 7 7" />
-                                        </svg>
-                                    </label>
-                                    <span>Start a Business</span>
-                                </div>
-                                @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 1)
-                                    ->get();
-                                @endphp
-                                <ul>
-                                    @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                            {{ $iteams->title }}
-                                        </a>
-                                    </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <label class="a-label__chevron" for="item-2">
-                                License & Registration
-                            </label>
-                            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox" />
-                            <div class="m-menu">
-                                <div class="m-menu__header">
-                                    <label class="m-menu__toggle" for="item-2">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                            stroke-linejoin="arcs">
-                                            <path d="M19 12H6M12 5l-7 7 7 7" />
-                                        </svg>
-                                    </label>
-                                    <span>License & Registration</span>
-                                </div>
-                                @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 2)
-                                    ->get();
-                                @endphp
-                                <ul>
-                                    
-                                    @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                            {{ $iteams->title }}
-                                        </a>
-                                    </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <label class="a-label__chevron" for="item-3">
-                                Taxation
-                            </label>
-                            <input type="checkbox" id="item-3" name="item-3" class="m-menu__checkbox" />
-                            <div class="m-menu">
-                                <div class="m-menu__header">
-                                    <label class="m-menu__toggle" for="item-3">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                            stroke-linejoin="arcs">
-                                            <path d="M19 12H6M12 5l-7 7 7 7" />
-                                        </svg>
-                                    </label>
-                                    <span>Taxation</span>
-                                </div>
-                                @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 3)
-                                    ->get();
-                                @endphp
-                                <ul>
-                                    
-                                    @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                            {{ $iteams->title }}
-                                        </a>
-                                    </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <label class="a-label__chevron" for="item-4">
-                                IPR &amp; Gaming Services
-                            </label>
-                            <input type="checkbox" id="item-4" name="item-4" class="m-menu__checkbox" />
-                            <div class="m-menu">
-                                <div class="m-menu__header">
-                                    <label class="m-menu__toggle" for="item-4">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                            stroke-linejoin="arcs">
-                                            <path d="M19 12H6M12 5l-7 7 7 7" />
-                                        </svg>
-                                    </label>
-                                    <span>IPR &amp; Gaming Services</span>
-                                </div>
-                                @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 4)
-                                    ->get();
-                                @endphp
-                                <ul>
-                                    
-                                    @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                            {{ $iteams->title }}
-                                        </a>
-                                    </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <label class="a-label__chevron" for="item-5">
-                                NGO Compliances
-                            </label>
-                            <input type="checkbox" id="item-5" name="item-5" class="m-menu__checkbox" />
-                            <div class="m-menu">
-                                <div class="m-menu__header">
-                                    <label class="m-menu__toggle" for="item-5">
-                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                            stroke-linejoin="arcs">
-                                            <path d="M19 12H6M12 5l-7 7 7 7" />
-                                        </svg>
-                                    </label>
-                                    <span>NGO Compliances</span>
-                                </div>
-                                @php
-                                $subcate = DB::table('practice_areas')
-                                    ->where('parent_id', 5)
-                                    ->get();
-                                @endphp
-                                <ul>
-                                    
-                                    @foreach ($subcate as $iteams)
-                                    <li>
-                                        <a href="{{ url(route('practicearea-detail', ['slug' => $iteams->slug] )) }}">
-                                            {{ $iteams->title }}
-                                        </a>
-                                    </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <div class="m-menu">
+      <div class="m-menu__header">
+        <label class="m-menu__toggle" for="menu">
+          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </label>
+        <span>MENU</span>
+      </div>
+      <ul>
+        <li><label>Item 1</label></li>
+        <li>
+          <label class="a-label__chevron" for="item-2">Item 2</label>
+          <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="item-2">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7" />
+                </svg>
+              </label>
+              <span>Item 2</span>
+            </div>
+            <ul>
+              <li><label>Item 2.1</label></li>
+              <li><label>Item 2.2</label></li>
+              <li>
+                <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
+                <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
+                <div class="m-menu">
+                  <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="item-2-3">
+                      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                      </svg>
+                    </label>
+                    <span>Item 2.3 </span>
+                  </div>
+                  <ul>
+                    <li><label>Item 2.3.1</label></li>
+                    <li><label>Item 2.3.2</label></li>
+                    <li><label>Item 2.3.3</label></li>
+                    <li><label>Item 2.3.4</label></li>
+                    <li><label>Item 2.3.5</label></li>
+                  </ul>
+              </li>
+              <li><label>Item 2.4</label></li>
+              <li><label>Item 2.5</label></li>
+              <li><label>Item 2.6</label></li>
+              <li><label>Item 2.7</label></li>
+              <li><label>Item 2.8</label></li>
+              <li><label>Item 2.9</label></li>
+          </div>
+        </li>
+        <li><label>Item 3</label></li>
+        <li><label>Item 4</label></li>
+        <li><label>Item 5</label></li>
+        <li><label>Item 6</label></li>
+      </ul>
     </div>
-    </div>
-    </div>
-</header>
-
-
-
-
-
-<!--------------header end-------------------->
+  </nav>
+</div>
+</div>
