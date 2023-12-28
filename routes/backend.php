@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\AuthenticateController;
 use App\Http\Controllers\backend\DashboardController;
+/*
 use App\Http\Controllers\backend\FaqController;
 use App\Http\Controllers\backend\TestimonialController;
 use App\Http\Controllers\backend\TeamController;
@@ -13,14 +14,18 @@ use App\Http\Controllers\backend\BlogController;
 use App\Http\Controllers\backend\NewsCategoryController;
 use App\Http\Controllers\backend\NewsController;
 use App\Http\Controllers\backend\PracticeAreaController;
+*/
 use App\Http\Controllers\backend\TrumbowygController;
+/*
 use App\Http\Controllers\backend\MediaCoverageController;
 use App\Http\Controllers\backend\PublicationController;
 use App\Http\Controllers\backend\ContactController;
 use App\Http\Controllers\backend\BusinessSettingController;
 use App\Http\Controllers\backend\ContactSettingController;
 use App\Http\Controllers\backend\AuthorController;
+*/
 use App\Http\Controllers\backend\UserController;
+use App\Http\Controllers\backend\CourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +46,7 @@ Route::get('/logout', [AuthenticateController::class, 'logout'])->name('backend.
 
 //dashborad
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('backend.dashboard');
-
+/*
 //faq
 Route::group(['prefix' => 'faq'], function () {
     Route::get('/index', [FaqController::class, 'index'])->name('faq.index');
@@ -54,7 +59,9 @@ Route::group(['prefix' => 'faq'], function () {
 });
 
 
+
 //Testimonials
+
 Route::group(['prefix' => 'testimonial'], function () {
     Route::get('/index', [TestimonialController::class, 'index'])->name('testimonial.index');
     Route::get('/add', [TestimonialController::class, 'add'])->name('testimonial.add');
@@ -65,7 +72,9 @@ Route::group(['prefix' => 'testimonial'], function () {
     Route::get('/status/{id}/{status}', [TestimonialController::class, 'status'])->name('testimonial.status');
 });
 
+
 //team
+
 Route::group(['prefix' => 'team'], function () {
     Route::get('/index', [TeamController::class, 'index'])->name('team.index');
     Route::get('/add', [TeamController::class, 'add'])->name('team.add');
@@ -77,7 +86,9 @@ Route::group(['prefix' => 'team'], function () {
     Route::get('/status/{id}/{status}', [TeamController::class, 'status'])->name('team.status');
 });
 
+
 //Award
+
 Route::group(['prefix' => 'award'], function () {
     Route::get('/index', [AwardController::class, 'index'])->name('award.index');
     Route::get('/add', [AwardController::class, 'add'])->name('award.add');
@@ -88,7 +99,9 @@ Route::group(['prefix' => 'award'], function () {
     Route::get('/status/{id}/{status}', [AwardController::class, 'status'])->name('award.status');
 });
 
+
 //blogcategory
+
 Route::group(['prefix' => 'blogs/category'], function () {
     Route::get('/index', [BlogCategoryController::class, 'index'])->name('blogcategory.index');
     Route::get('/add', [BlogCategoryController::class, 'add'])->name('blogcategory.add');
@@ -142,7 +155,9 @@ Route::group(['prefix' => 'news'], function () {
     Route::get('/status/{id}/{status}', [NewsController::class, 'status'])->name('news.status');
 });
 
+
 //PracticeArea
+
 Route::group(['prefix' => 'practicearea'], function () {
     Route::get('/index', [PracticeAreaController::class, 'index'])->name('practicearea.index');
     Route::get('/add', [PracticeAreaController::class, 'add'])->name('practicearea.add');
@@ -153,12 +168,14 @@ Route::group(['prefix' => 'practicearea'], function () {
     Route::post('/delete/{id}', [PracticeAreaController::class, 'delete'])->name('practicearea.delete');
     Route::get('/status/{id}/{status}', [PracticeAreaController::class, 'status'])->name('practicearea.status');
 });
+*/
 
 //News
 Route::group(['prefix' => 'trumbowyg'], function () {
     Route::post('/upload', [TrumbowygController::class, 'upload'])->name('trumbowyg.upload');
 });
 
+/*
 //mediacoverage
 Route::group(['prefix' => 'mediacoverage'], function () {
     Route::get('/index', [MediaCoverageController::class, 'index'])->name('mediacoverage.index');
@@ -180,6 +197,7 @@ Route::group(['prefix' => 'publication'], function () {
     Route::post('/delete/{id}', [PublicationController::class, 'delete'])->name('publication.delete');
     Route::get('/status/{id}/{status}', [PublicationController::class, 'status'])->name('publication.status');
 });
+*/
 
 //Contact
 Route::group(['prefix' => 'contact'], function () {
@@ -188,6 +206,7 @@ Route::group(['prefix' => 'contact'], function () {
     Route::post('/delete/{id}', [ContactController::class, 'delete'])->name('contact.delete');
 });
 
+/*
 //setting
 Route::group(['prefix' => 'setting'], function () {
     Route::get('/index', [BusinessSettingController::class, 'index'])->name('setting.index');
@@ -204,6 +223,7 @@ Route::group(['prefix' => 'contact/page'], function () {
     Route::get('/index', [ContactSettingController::class, 'index'])->name('contactpage.index');
     Route::post('/update', [ContactSettingController::class, 'update'])->name('contactpage.update');
 });
+*/
 
 //clear cache
 Route::get('/clear-cache', function () {
@@ -215,7 +235,7 @@ Route::get('/clear-cache', function () {
     return back()->with('status', 'Cache cleared successfully!');
 })->name('clear-cache');
 
-
+/*
 //Author
 Route::group(['prefix' => 'author'], function () {
     Route::get('/index', [AuthorController::class, 'index'])->name('author.index');
@@ -226,6 +246,7 @@ Route::group(['prefix' => 'author'], function () {
     Route::post('/delete/{id}', [AuthorController::class, 'delete'])->name('author.delete');
     //Route::get('/status/{id}/{status}', [AuthorController::class, 'status'])->name('author.status');
 });
+*/
 
 //User
 Route::group(['prefix' => 'profile'], function () {
@@ -233,4 +254,16 @@ Route::group(['prefix' => 'profile'], function () {
     Route::get('/reset/{id}', [UserController::class, 'password'])->name('user.password');
     Route::post('/update', [UserController::class, 'update'])->name('user.update');
     Route::post('/reset', [UserController::class, 'reset'])->name('user.reset');    
+});
+
+//course
+Route::group(['prefix' => 'course'], function () {
+    Route::get('/index', [CourseController::class, 'index'])->name('course.index');
+    Route::get('/add', [CourseController::class, 'add'])->name('course.add');
+    Route::get('/edit/{id}', [CourseController::class, 'edit'])->name('course.edit');
+    Route::get('/view/{id}', [CourseController::class, 'view'])->name('course.view');
+    Route::post('/create', [CourseController::class, 'create'])->name('course.create');
+    Route::post('/update', [CourseController::class, 'update'])->name('course.update');
+    Route::post('/delete/{id}', [CourseController::class, 'delete'])->name('course.delete');
+    Route::get('/status/{id}/{status}', [CourseController::class, 'status'])->name('course.status');
 });
