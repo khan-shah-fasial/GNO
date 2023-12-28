@@ -8,248 +8,193 @@
 
 @section('page.content')
 
-<!-- -------------------- About banner start ---------------- -->
-
-<section class="about_page_banner breadcrumes_padd">
+<section class="innertitle aboutus">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="text-center">
-                    <h4 class="heading">About Us</h4>
-                    <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item home">
-                                <a href="#" data-aos="fade-up" data-aos-once="true">Home</a>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                About Us
-                            </li>
+                <h4 class="inner_titles text-center">About Us</h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb d-flex justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                            <li class="breadcrumb-item">About Us</li>
                         </ol>
                     </nav>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- -------------------- About banner end   ---------------- -->
-
-<!-- -------------------- About Content start ---------------- -->
-
-<section class="about_page_content pb-0">
-    <div class="container">
+<section class="about">
+      <div class="container">
         <div class="row">
-            <div class="col-md-12 padd00mb">
+          <div class="col-md-6">
+            <div class="left_wrapper textjustify">
+              <h2 class="heading mb-4 arsenica_fonts" data-aos-once="true" data-aos="fade-up">Get to Know More About GNOA</h2>
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">
+                As Dawat-e-Islami India is doing its services in more than 80 walks of life with the sole aim of propagating the teachings of Quran and Sunnah and this is another step for those Islamic brothers and sisters who are aged or busy in their worldly affairs but haven’t learned the proper recitation of Quran. We urged to all our Islamic brothers and sisters to take admission in this online Quran academy and learn to read Quran properly. 
+                </p>
+                <p class="me-4" data-aos-once="true" data-aos="fade-up">
+                Being a Muslim, it is our religious duty that we should not only recite Quran but also try to understand every word of it and if you are one of them who are unable to recite Quran properly then take admission in this online Quran teaching service and enlighten your heart with the sacred holy book of Almighty. </p>
+              </p>
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">
+                GNOA is an Islamic Education Department, which provides various Islamic courses all over the world.
+              </p>
               
-                <p class="desc" data-aos-once="true" data-aos="fade-up">
-                    Ahlawat & Associates (“A&A”) is one of the leading full-service
-                    law firms in India, catering to domestic and international
-                    clients.
-                </p>
-                <p class="desc mb-3" data-aos-once="true" data-aos="fade-up">
-                    Incorporated in 1978 as a primary litigation practice by Mrs.
-                    Avnish Ahlawat, A&A gradually expanded its field of services and
-                    expertise and is now one of the leading law firms in India. A&A
-                    offers comprehensive counsel on a range of legal services
-                    including Mergers & Acquisitions, Private Equity, Real Estate,
-                    Education, Intellectual Property, Employment and Labour, Licensing
-                    and Registrations, Taxation (Direct & Indirect), Business Setup
-                    (globally), thus catering to every legal need from across the
-                    globe.
-                </p>
-                <p class="desc mb-3" data-aos-once="true" data-aos="fade-up">
-                    Our services extend through diverse sectors of industry including
-                    assistance to facilitate foreign direct investments and business
-                    setup in India and our clientele include an array of domestic and
-                    international individuals and companies.
-                </p>
-                <p class="desc mb-3" data-aos-once="true" data-aos="fade-up">
-                    A&A has been recognized for its expertise in addressing an array
-                    of legal issues especially those relating to Foreign Direct
-                    Investment, Joint Ventures, Corporate Compliance & Governance as
-                    well as advisory support to the booming startup ecosystem, in both
-                    the domestic and international space. Since our diversification,
-                    A&A has assisted and continues to assist clients from over 20
-                    jurisdictions to enter and flourish in India by providing various
-                    options to best suit their needs. A&A takes pride in being amongst
-                    the most sought-after qualitative legal service provider globally.
-                </p>
-                <p class="desc mb-lg-5 mb-3" data-aos-once="true" data-aos="fade-up">
-                    With an aim to provide valued, practical and strategic legal
-                    solutions to help clients achieve their goals, A&A combines the
-                    highest global standards with local expertise.
-                </p>
-                <img src="/assets/frontend/images/aboutUs.png" alt="" class="about_content_img" data-aos-once="true"
-                    data-aos="fade-up" />
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">
+                 We welcome our users to Online Quran teaching services where we are offering multiple Islamic as well as character building and life reformation courses as per the teachings of Sharia.
+              </p>
+             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right_wrapper">
+              <img  src="assets/frontend/images/about.png" data-aos-once="true" data-aos="fade-up" alt="" />
             </div>
+          </div>
+          <div class="col-md-12">
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">We have the Best team of both male and female Quran teachers who are committed to their GN online Academy work, university graduates and are highly qualified. Most of them are Hafiz/Hafiza And Alim/Alima Teacher.</p>
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">Thousands of individuals have learned to read the Quran with these online Quran classes service in India and many other countries of the globe. we are providing 16-hour service Quran Classes to our students so that students can adjust their tutorial timings according to their availability, ease and comfort.</p>
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">People of all ages can study in this department. For example, children, men and women, elderly women, elderly men. The department has a complete system of student teachers and other staff.</p>
+              <p class="me-4" data-aos-once="true" data-aos="fade-up">By successfully completing their course of study all students will receive a Certificate issue by our Academy. This department is being handled by our Education Dept. in India.</p>
+            
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+    
+    
+    <!-------------------------- counter Section --------------------- -->
 
-<!-- -------------------- About Content end   ---------------- -->
-
-<!------ counter_section Start -------------------------->
-
-<section class="counter_section">
-    <div class="container">
+    <section class="counter" id="counter">
+      <div class="container">
         <div class="row">
-            <div class="col-md-12" id="counter">
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate d-flex">
-                                <div class="about_counter_icon">
-                                    <div class="about_counter_img">
-                                        <img src="/assets/frontend/images/trusted_icon.png" alt="counter 1"
-                                            class="mb-4" />
-                                    </div>
-                                </div>
-                                <div class="about_counter">
-                                    <p class="about_counter_number">
-                                        <span class="counter-value" data-count="23">0</span>k
-                                    </p>
-                                    <p class="about_counter_para">Trusted Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 second_counter">
-                        <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate" data-aos="fade-up"
-                                data-aos-once="true">
-                                <div class="about_counter_icon">
-                                    <div class="about_counter_img">
-                                        <img src="/assets/frontend/images/recovered_icons.png" alt="counter 1"
-                                            class="mb-4" />
-                                    </div>
-                                </div>
-                                <div class="about_counter">
-                                    <p class="about_counter_number">
-                                        <span class="counter-value" data-count="162">0</span>k
-                                    </p>
-                                    <p class="about_counter_para">Recovered Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 third_counter">
-                        <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate" data-aos="fade-up"
-                                data-aos-once="true">
-                                <div class="about_counter_icon">
-                                    <div class="about_counter_img">
-                                        <img src="/assets/frontend/images/certified_icons.png" alt="counter 1"
-                                            class="mb-4" />
-                                    </div>
-                                </div>
-                                <div class="about_counter">
-                                    <p class="about_counter_number">
-                                        <span class="counter-value" data-count="90">0</span>%
-                                    </p>
-                                    <p class="about_counter_para">Special Cases</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="about_counter_container">
-                            <div class="about_right_counter aos-init aos-animate" data-aos="fade-up"
-                                data-aos-once="true">
-                                <div class="about_counter_icon">
-                                    <div class="about_counter_img">
-                                        <img src="/assets/frontend/images/law_icons.png" alt="counter 1" class="mb-4" />
-                                    </div>
-                                </div>
-                                <div class="about_counter">
-                                    <p class="about_counter_number">
-                                        <span class="counter-value" data-count="115">0</span>k
-                                    </p>
-                                    <p class="about_counter_para">Personal Injury Cases</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="col-md-4">
+            <div class="wrapper" data-aos-once="true" data-aos="fade-up">
+              <img src="assets/frontend/images/counter_1.png" alt="" />
+              <div>
+                <h2><span class="counter-value" data-count="18">0</span>+</h2>
+                <p>Branches</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="wrapper" data-aos-once="true" data-aos="fade-up">
+              <img src="assets/frontend/images/counter_2.png" alt="" />
+              <div>
+                <h2><span class="counter-value" data-count="6.2">0</span>k+</h2>
+                <p>Pass out</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="wrapper" data-aos-once="true" data-aos="fade-up">
+              <img src="assets/frontend/images/counter_3.png" alt="" />
+              <div>
+                <h2><span class="counter-value" data-count="2.3">0</span>k+</h2>
+                <p>Students</p>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- counter Section --------------------- -->
+    
+    <!-------------------------- certificate Section --------------------- -->
+
+    <section class="certificate">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left_wrapper">
+              <div>
+                <h2
+                  class="heading arsenica_fonts"
+                  data-aos-once="true"
+                  data-aos="fade-up"
+                >
+                  Get a Certificate
+                </h2>
+                <p data-aos-once="true" data-aos="fade-up">
+                  We welcome our users to Online Quran teaching services where
+                  we are offering multiple Islamic as well as character building
+                  and life reformation courses as per the teachings of Sharia.
+                  Thousands of individuals have learned to read Quran with these
+                  online Quran classes service in India and many other
+                  countries of the globe.
+                </p>
+                 <a target="_blank" href="https://online.gnoa.in/apex/f?p=104:11::::::"
+                class="detials_button"
+                data-aos-once="true"
+                data-aos="fade-up"
+              >
+                Register Now
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              id="certificate"
+              class="carousel slide"
+              data-aos-once="true"
+              data-aos="fade-up"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/frontend/images/certificate.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/frontend/images/certificate.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/frontend/images/certificate.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#certificate"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#certificate"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<!---------- counter_section End -------------------------->
-<!-- -------------------- About Content start ---------------- -->
-
-<section class="about_page_content_2 pb-0 pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 padd00mb">
-                <h4 class="heading3 mb-2" data-aos-once="true" data-aos="fade-up">
-                    Team Of Experts
-                </h4>
-                <p class="desc mb-4 mb-lg-5" data-aos-once="true" data-aos="fade-up">
-                    All our partners are recognized leaders in their respective
-                    fields. They have specialized knowledge of both the legal
-                    framework as well as the specific business requirements of various
-                    industry sectors. They have a well-established track record in
-                    guiding companies and individuals based on their specific needs
-                    for doing business in India. The partners are confident in their
-                    ability to provide advise across borders, identifying themselves
-                    with the clients’ requirements and work along with the clients to
-                    help them achieve their objectives. With a keen focus on quality,
-                    reliability and cost-effectiveness, A&A has adopted standards
-                    employed by the top international law firms which put clients at
-                    ease and have made A&A a dependable source of seamless knowledge
-                    and implementation
-                </p>
-                <h4 class="heading3 mb-2 mt-3" data-aos-once="true" data-aos="fade-up">
-                    Our Uniqueness
-                </h4>
-                <p class="desc mb-4 mb-lg-5" data-aos-once="true" data-aos="fade-up">
-                    A&A adopted an approach that demands the highest levels of
-                    understanding in each of their practice areas, technical skill and
-                    service delivery allowing us to provide accurate, reliable, timely
-                    and cost-effective advice across a range of industry groups and
-                    sectors. This is reflected through our team of associates, who
-                    abide by the system and ensure that the client’s needs always come
-                    first. With our expertise and diversity of experience within the
-                    teams, we are able to keep in touch with the changing environment
-                    that our clients operate in and provide them with personalized
-                    solutions to their business requirements or legal reservations.
-                    Our continuous relationship with our clients and comprehension of
-                    their business have ensured that our services extend to our
-                    keeping abreast with the latest legal findings and amendments on
-                    issues that could influence the viability our clients business and
-                    provide them dynamic solutions with respect to applicable legal
-                    and regulatory compliances to enable smooth functionality of their
-                    business’.
-                </p>
-                <h4 class="heading3 mb-2" data-aos-once="true" data-aos="fade-up">
-                    Our Values
-                </h4>
-                <p class="desc mb-4 mb-lg-5" data-aos-once="true" data-aos="fade-up">
-                    Our most valuable asset for progress is consistent cooperation and
-                    coordinated effort within and between our teams, across each
-                    practice area. Each partner-led team, having specific practice
-                    area knowledge and expertise, understand the clients requirements
-                    and revert expeditiously to the committed satisfaction of the
-                    client. With emphasis on our core values of focusing on quality,
-                    reliability and efficacy along with a basic understanding, that we
-                    work best through teamwork and collaboration, we are able to work
-                    seamlessly across all practice areas for our clients.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- -------------------- About Content end   ---------------- -->
-<!-- ---------- service get in touch  start ---------------------- -->
-
-@include('frontend.component.get_in_touch')
-
-<!-- -------------- service get in touch  end ---------------------- -->
-
-<!------------------ awards_section Start -------------------------->
-@include('frontend.component.awards')
-<!------------------ awards_section End -------------------------->
+      </div>
+    </section>
 
 @endsection

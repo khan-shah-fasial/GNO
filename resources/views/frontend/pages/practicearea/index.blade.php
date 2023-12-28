@@ -9,57 +9,349 @@
 @section('page.content')
 
 
-    <!-------===========practicearea list start===================------------>
+    <!-------===========course list start===================------------>
 
-    <!-- --------------- blog banner start ---------------- -->
-    <section class="blog_banner text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="heading fs-2">Practice Areas</h1>
-                    <nav aria-label="breadcrumb" class="breadcrumb d-flex justify-content-center mb-0">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item home"><a href="{{ url(route('index')) }}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Practice Areas</li>
+   <section class="innertitle aboutus">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="inner_titles text-center">Courses</h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb d-flex justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                            <li class="breadcrumb-item">Courses</li>
                         </ol>
                     </nav>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- --------------- blog banner end ---------------- -->
-
-    <!-- --------------- blog image start ---------------- -->
-
-    <section class="blog_image">
-        <div class="container">
-            <div class="row">
-
-                @foreach($practiceAreas as $row)
-                    <div class="col-md-3">
-                        <div class="practice_listing_box" data-aos="fade-up"data-aos-once="true">
-                            <img src="{{ asset('storage/' . $row->thumnail_image) }}" alt="{{ $row->alt_thumnail_image }}" class="blog_img" />
-                            <div class="practice_listing_content">
-                                <h4>{{ $row->title }}</h4>
-                                <a href="{{ url(route('practicearea-detail', ['slug' => $row->slug] )) }}">Learn More <img src="assets/frontend/images/right_arrow1.png"></a>
-                            </div>
-                        </div>
+    
+     <section class="course courses_listing">
+      <div class="container">
+           <h2
+              class="heading arsenica_fonts">
+              Our Courses
+            </h2>
+        <div class="row">
+           
+              <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content ">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
                     </div>
-                @endforeach
-
-            </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt="" /></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                     <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                     <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                     <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+              <div class="card mb-4">
+                  <div class="card_course" >
+                      <div class="overlay">
+                    <img
+                      src="assets/frontend/images/course.png"
+                      alt=""/></div>
+                    <div class="card_content">
+                      <h3
+                        class="title arsenica_fonts">
+                        Tafseer Course
+                      </h3>
+                      <p class="desc">
+                        No doubt the knowledge of Quran is the best of all
+                        knowledge and it is necessary for Muslims to not only
+                        learn the re...
+                      </p>
+                     <div class="row">
+                          <div class="col-md-6">
+                              <div class="social_icons">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span>4.6</span>
+                      </div>
+                          </div>
+                           <div class="col-md-6">
+                               <div class="arrow_btn_slider">
+                                   <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                               </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
         </div>
+      </div>
     </section>
 
-    <!-- --------------- blog image end ---------------- -->
-
-    <!-- -------------------- Blog Start --------------- -->
-
-    @include('frontend.component.random_blog_list_section')
-
-    <!-- -------------------- Blog End --------------- -->
-
-    <!-------===========practicearea end===================------------>
+    <!-------===========course listing end===================------------>
 @endsection
 

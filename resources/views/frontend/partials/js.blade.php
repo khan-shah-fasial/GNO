@@ -13,7 +13,7 @@
 <script src="/assets/frontend/js/owl.carousel.js"></script>
 
 <!--google translate js-->
-<!-- <script defer src="/assets/frontend/js/google_translate.js"></script> -->
+<script defer src="/assets/frontend/js/google_translate.js"></script> 
 
 <!--moment js-->
 <script defer src="/assets/frontend/js/moment.min.js"></script>
@@ -23,6 +23,9 @@
 
 <!--Toast Js-->
 <script defer src="/assets/frontend/js/toastr.min.js"></script>
+
+<!--fancybox gallery Js-->
+ <script src="/assets/frontend/js/jquery.fancybox.min.js"></script>
 
 <!--whatsapp js-->
 <script defer src="/assets/frontend/js/whatsapp-chat-support.js"></script>

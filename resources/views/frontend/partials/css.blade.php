@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="/assets/frontend/css/owl.theme.default.min.css" />
 <link rel="stylesheet" href="/assets/frontend/css/whatsapp-chat-support.css" />
 <link rel="stylesheet" href="/assets/frontend/css/toastr.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/frontend/css/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">

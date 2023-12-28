@@ -9,7 +9,7 @@ use App\Models\Blog;
 use App\Models\BlogCategory;
 use App\Models\User;
 use App\Models\Team;
-use App\Models\Faq;
+use App\Models\Branche;
 use App\Models\Contact;
 use App\Models\BlogComment;
 use App\Models\MediaCoverage;
@@ -153,10 +153,10 @@ class IndexController extends Controller
         return view('frontend.pages.career.index');
     }
 
-    public function faq(){
-        $faq = Faq::where('status', 1)->get();
-        return view('frontend.pages.faq.index', compact('faq'));
+    public function our_branche(){
+        return view('frontend.pages.branche.index');
     }
+
 
     public function about_us(){
         return view('frontend.pages.about.index');
@@ -164,8 +164,14 @@ class IndexController extends Controller
 
     public function privacy_policy(){
         return view('frontend.pages.privacypolice.index');
+    }  
+    
+    public function term_condition(){
+        return view('frontend.pages.termcondition.index');
     }
 
+
+    
 //--------------=============================== Pages ================================------------------------------
 
 //--------------=============================== contact form save ===========================------------------------------
