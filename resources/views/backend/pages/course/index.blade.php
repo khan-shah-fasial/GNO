@@ -35,7 +35,7 @@
                 <td>{{$i++}}</td>
                 <td>{{$row->title}}</td>
                 <td>
-                    <a target="_blank" href="{{url(route('practicearea-detail', $row->slug))}}">{{$row->slug}}</a>
+                    <a target="_blank" href="{{url(route('course-detail', $row->slug))}}">{{$row->slug}}</a>
                 </td>                
                 <td>
                     @if($row->status)
