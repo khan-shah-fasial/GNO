@@ -86,50 +86,56 @@
 
 
                     <div class="row">
-                        <div class="col-md-6">
+                        @if(!empty($detail->period_b))
+                            <div class="col-md-6">
 
-                            <div class="durationtp_box" data-aos-once="true" data-aos="fade-up">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                    class="aos-init aos-animate">
-                                    For Brothers</button>
+                                <div class="durationtp_box" data-aos-once="true" data-aos="fade-up">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        class="aos-init aos-animate">
+                                        For Brothers</button>
+                                </div>
+
+                                <div class="courses_fix_content" data-aos-once="true" data-aos="fade-up">
+                                    <p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                        <span><strong>Period :</strong></span>
+                                        <span>{{ $detail->period_b }}</span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                        <span><strong>Duration :</strong></span>
+                                        <span>{{ $detail->duration_b }}</span>
+                                    </p>
+                                </div>
                             </div>
+                        @endif
 
-                            <div class="courses_fix_content" data-aos-once="true" data-aos="fade-up">
-                                <p>
-                                    <span><i class="fa-solid fa-angle-right"></i></span>
-                                    <span><strong>Period :</strong></span>
-                                    <span>{{ $detail->period_b }}</span>
-                                </p>
-                                <p>
-                                    <span><i class="fa-solid fa-angle-right"></i></span>
-                                    <span><strong>Duration :</strong></span>
-                                    <span>{{ $detail->duration_b }}</span>
-                                </p>
+
+                        @if(!empty($detail->period_s))
+                            <div class="col-md-6">
+                                <div class="durationtp_box" data-aos-once="true" data-aos="fade-up">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        class="aos-init aos-animate">
+                                        For Sisters</button>
+                                </div>
+
+
+                                <div class="courses_fix_content" data-aos-once="true" data-aos="fade-up">
+
+                                    <p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                        <span><strong>Period :</strong></span>
+                                        <span>{{ $detail->period_s }}</span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                        <span><strong>Duration :</strong></span>
+                                        <span>{{ $detail->duration_s }}</span>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        @endif
 
-                        <div class="col-md-6">
-                            <div class="durationtp_box" data-aos-once="true" data-aos="fade-up">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                    class="aos-init aos-animate">
-                                    For Sisters</button>
-                            </div>
-
-
-                            <div class="courses_fix_content" data-aos-once="true" data-aos="fade-up">
-
-                                <p>
-                                    <span><i class="fa-solid fa-angle-right"></i></span>
-                                    <span><strong>Period :</strong></span>
-                                    <span>{{ $detail->period_s }}</span>
-                                </p>
-                                <p>
-                                    <span><i class="fa-solid fa-angle-right"></i></span>
-                                    <span><strong>Duration :</strong></span>
-                                    <span>{{ $detail->duration_s }}</span>
-                                </p>
-                            </div>
-                        </div>
                     </div>
 
 
