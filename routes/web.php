@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Mail;
 
 // Home START
 Route::get('/', [IndexController::class, 'index'])->name('index');
+
+/*
 Route::get('/area-of-practices', [IndexController::class, 'practice_area'])->name('practicearea');
 
 $service = DB::table('practice_areas')->pluck('slug')->toArray();
@@ -48,6 +50,11 @@ Route::get('/publication-data', [IndexController::class, 'publication_data'])->n
 
 Route::any('/team-members', [IndexController::class, 'team_members'])->name('team');
 Route::get('/team-members/{slug}', [IndexController::class, 'team_detail'])->name('team.detail');
+*/
+
+Route::get('/courses', [IndexController::class, 'courses'])->name('courses');
+Route::get('/course/{slug}', [IndexController::class, 'course_detail'])->name('course-detail');
+
 Route::get('/contact-us', [IndexController::class, 'contact_us'])->name('contact');
 Route::any('/about-us', [IndexController::class, 'about_us'])->name('about');
 Route::get('/our-branche', [IndexController::class, 'our_branche'])->name('branche');

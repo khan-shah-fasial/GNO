@@ -52,10 +52,10 @@
                         <ul class="navbar-nav ms-auto ps-lg-0">
                          
                            <li class="nav-item">
-                              <a class="nav-link" href="index.php">Home</a>
+                              <a class="nav-link" href="{{ url(route('index')) }}">Home</a>
                            </li>
                            <li class="nav-item dropdown dropdown-hover position-static">
-                              <a class="nav-link dropdown-toggle" href="courses.php" id="navbarDropdown" role="button"
+                              <a class="nav-link dropdown-toggle" href="{{ url(route('courses')) }}" id="navbarDropdown" role="button"
                                  data-mdb-toggle="dropdown" aria-expanded="false">
                               Courses
                               </a>

@@ -14,6 +14,7 @@ use App\Models\Contact;
 use App\Models\BlogComment;
 use App\Models\MediaCoverage;
 use App\Models\Publication;
+use App\Models\Courses;
 use Illuminate\Support\Facades\Mail;
 
 
@@ -23,6 +24,7 @@ class IndexController extends Controller
         return view('frontend.pages.home.index');
     }
 //--------------=============================== practice area =====================---------------------------
+/*
     public function practice_area(){
         $practiceAreas = PracticeArea::where('status', 1)->orderBy('updated_at', 'desc')->get();
 
@@ -122,6 +124,7 @@ class IndexController extends Controller
 
         return view('frontend.pages.team.detail', compact('detail'));
     }
+*/
 
 //--------------=============================== Team end ================================------------------------------
 
@@ -247,7 +250,7 @@ class IndexController extends Controller
    //--------------=============================== contact form save ===========================--------------------------
    
    //--------------=============================== news ==========================================-------------------------
-
+/*
     public function news(){
         $news = Blog::where('status', 1)->whereJsonContains('blog_category_ids', '4')->orderBy('created_at', 'desc')->paginate(6);
 
@@ -347,7 +350,7 @@ class IndexController extends Controller
     
         return view('frontend.pages.publication.index', compact('publication'));
     }
-
+*/
 //--------------=============================== publication end ====================================---------------------
 
 //--------------=============================== other feature ====================================---------------------
@@ -394,6 +397,48 @@ class IndexController extends Controller
 
     public function refund_policy(){
         return view('frontend.pages.refund_policy.index');
+    }
+
+// ============----------------------- course -------------------==============================
+
+    public function courses(){
+        $courses = Courses::where('status', 1)->orderBy('updated_at', 'desc')->get();
+
+        //return courses;
+        return view('frontend.pages.course.index', compact('courses'));
+    }
+
+    public function course_detail($slug){
+        
+        $detail = Courses::where('slug', $slug)->where('status', 1)->first();
+
+        $other_courses = Courses::where('status', '1')->where('id', '!=', $detail->id)->orderBy('id', 'desc')->limit(5)->get();
+
+        /*
+        //$slug = str_replace('-', ' ', $slug);
+        $blog_Catg = BlogCategory::where('slug', $slug)->where('status', 1)->first();
+
+        if(!empty($blog_Catg)){
+            $blog = Blog::where('status', 1)->whereJsonContains('blog_category_ids', ''.$blog_Catg->id.'')->limit(3)->orderBy('id', 'desc')->get();
+        } else {
+            $blog = [];
+        }
+        
+
+        if(empty($detail->parent_id)){  
+            $focusAreaIds = json_decode($detail->focus_area, true);
+            $focusAreaIds = is_array($focusAreaIds) ? $focusAreaIds : [];
+
+            $child_detail = PracticeArea::where('status', 1)->whereIn('id', $focusAreaIds)->get();
+        } else  {
+            $child_detail = [];
+        }
+
+        */
+        
+
+        return view('frontend.pages.course.detail', compact('detail','other_courses'));
+
     }
 
 
