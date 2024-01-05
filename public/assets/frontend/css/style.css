@@ -442,7 +442,7 @@ header .list-group.list-group-flush {
 
 .welcome {
     background-image: url("/assets/frontend/images/welcome_bg.png");
-    padding: 35px;
+    padding: 35px 0;
 }
 
 .welcome .wrapper {
@@ -474,7 +474,7 @@ header .list-group.list-group-flush {
 /* ---------------------- about  ------------------ */
 
 .about {
-    padding: 60px 0;
+    padding: 45px 0;
 }
 
 .about .left_wrapper h2 {
@@ -663,6 +663,9 @@ section.course .owl-carousel .owl-stage-outer {
 #course .owl-nav.disabled {
     display: block !important;
 }
+#course .owl-dots {
+    display: none !important;
+}
 
 .course_dthed {
     color: #f7ae6a;
@@ -769,7 +772,7 @@ section.course .owl-carousel .owl-stage-outer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 60px 0;
+    padding: 45px 0;
 }
 
 .certificate .left_wrapper {
@@ -778,7 +781,7 @@ section.course .owl-carousel .owl-stage-outer {
     align-items: center;
 }
 
-.certificate .left_wrapper div {
+.certificate .left_wrapper div:nth-child(1) {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -807,7 +810,7 @@ section.course .owl-carousel .owl-stage-outer {
 /* ---------------------- Gallery  ------------------ */
 
 .gallery {
-    padding: 60px 0;
+    padding: 45px 0;
 }
 
 .gallery .left_wrapper {
@@ -816,7 +819,7 @@ section.course .owl-carousel .owl-stage-outer {
     align-items: center;
 }
 
-.gallery .left_wrapper div {
+.gallery .left_wrapper div:nth-child(1) {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1207,7 +1210,7 @@ section.course .owl-carousel .owl-stage-outer {
     color: #f7ae6a;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
     color: #ffffff !important;
 }
 
@@ -1374,10 +1377,10 @@ textarea:focus {
     border-bottom: 1px solid #000;
 }
 
-.contact_from input:valid+label,
-textarea:valid+label,
-textarea:focus+label,
-input:focus+label {
+.contact_from input:valid + label,
+textarea:valid + label,
+textarea:focus + label,
+input:focus + label {
     top: 15px;
     color: #5b5b5b;
 }
@@ -1397,11 +1400,7 @@ input:focus+label {
 }
 
 .question_sec h3 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 40px;
     color: #007695;
-    padding-top: 9px;
 }
 
 .question_sec p {
@@ -1491,6 +1490,7 @@ input:focus+label {
     border: none;
     border-bottom: 1px solid;
     border-color: #d8d8d8;
+    width: 100%;
 }
 
 .contact_from .form-md {
@@ -1849,32 +1849,10 @@ select.goog-te-combo {
 #branches img {
     object-fit: cover;
     height: 180px;
-    width: 300px;
-}
-
-section.gallery_page.sectionpadd45 img {
-    height: 180px;
-    width: 300px;
 }
 
 #branches {
     padding-bottom: 40px;
-}
-
-.detials_button {
-    padding: 9px 20px;
-    color: white !important;
-    background: #eea943;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 36px;
-    border-radius: 15px;
-    border: none;
-    transition: all 0.3s;
-    width: 300px;
-    text-align: center;
-    display: block;
-    text-decoration: none;
 }
 
 .detials_button:hover {
@@ -1963,11 +1941,11 @@ section.why_choose .font24 {
     color: rgb(238 169 67) !important;
 }
 
-.dropdown-hover:hover>.dropdown-menu {
+.dropdown-hover:hover > .dropdown-menu {
     display: inline-block;
 }
 
-.dropdown-hover>.dropdown-toggle:active {
+.dropdown-hover > .dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
