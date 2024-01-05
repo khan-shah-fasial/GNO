@@ -1,56 +1,39 @@
 @php
-$practice_Area = DB::table('practice_areas')->where('parent_id', null)->orderBy('series', 'asc')->get();
+    $courses = DB::table('courses')
+        ->where('status', 1)
+        ->get();
 @endphp
 
 <!-----------================= Footer form start =============--------------->
-<form class="contact_form" id="add_footer_form" action="{{url(route('contact.create'))}}" method="post"
-    enctype="multipart/form-data">
-    @csrf
-    <h3 data-aos-once="true" data-aos="fade-up">Any query? Let’s connect</h3>
-    <input type="hidden" name="section" value="Footer Form" data-aos-once="true" data-aos="fade-up" />
-    <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
-    <div class="d-flex align-items-center gap-3 mb-3">
-        <div class="w-100">
-            <input type="text" class="form-control" placeholder="Write Your Name..." name="name" data-aos-once="true"
-                data-aos="fade-up" required />
-        </div>
 
-        <div class="w-100">
-            <input type="email" class="form-control" placeholder="Write Your Email..." name="email" data-aos-once="true"
-                data-aos="fade-up" required />
-        </div>
-    </div>
+<div class="col-md-4">
+    <h3 class="title">Enquire Now</h3>
+    <form class="contact_form" id="add_footer_form" action="{{ url(route('contact.create')) }}" method="post"
+        enctype="multipart/form-data">
+        @csrf
 
-    <div class="d-flex align-items-center gap-3 mb-3">
+        <input type="hidden" name="section" value="Footer Form" data-aos-once="true" data-aos="fade-up" />
+        <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
 
-        <div class="w-100">
-            <input type="number" class="form-control" placeholder="Write Your Phone No" name="phone"
-                data-aos-once="true" data-aos="fade-up" required />
-        </div>
+        <input type="text" name="name"  class="form-control" placeholder="Your Name" required>
+        <input type="email" name="email" class="form-control" placeholder="Your Email"  required>
 
+        <input type="tel" name="phone" class="form-control" placeholder="Write Your Phone No"  required>
 
-        <div class="w-100">
-            <select class="form-select" data-aos-once="true" name="services" data-aos="fade-up" required>
-                <option value="">Select the Service</option>
-
-                @foreach ($practice_Area as $row)
+        <select class="form-select select_drp_image select2" name="services" aria-label="Default select example" required>
+            <option selected value="">Select</option>
+            @foreach ($courses as $row)
                 <option value="{{ $row->title }}">{{ $row->title }}</option>
-                @endforeach
+            @endforeach
+        </select>
+        <input class="form-control" name="description" type="text" placeholder="Message" />
 
-            </select>
+        <input type="hidden" name="ref_url" value="{{ url()->previous() }}" data-aos-once="true" data-aos="fade-up" />
+
+        <div class="text-center">
+            <button type="submit">Send a Message</button>
         </div>
-    </div>
-
-    <textarea class="form-select footer_textarea" name="description" placeholder="Brief description of your legal issue"
-        data-aos-once="true" data-aos="fade-up" rows="2"></textarea>
-
-    <div class="mt-3">
-        <div class="g-recaptcha" data-sitekey="{{env('GOOGLE_CAPTCHA_SITEKEY')}}"></div>
-    </div>
-
-    <div class="text-center mt-4">
-        <button type="submit" class="contact_form_button" data-aos-once="true" data-aos="fade-up">SEND</button>
-    </div>
-</form>
+    </form>
+</div>
 
 <!-------------------============= Footer Form end ===============-------------->
