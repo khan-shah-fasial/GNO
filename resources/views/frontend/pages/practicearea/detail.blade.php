@@ -12,7 +12,7 @@
 @section('page.content')
 
 
- <!-------------------------- courses details Section --------------------- -->
+ <!-------------------------- courses details Section--------------------- -->
 
     <div class="course_hero" data-aos-once="true" data-aos="fade-up">
       <div class="container">

@@ -34,10 +34,10 @@ class CourseController extends Controller
             'rating' => 'required',
             'cont_title' => 'required',
             'content' => 'required',
-            'period_b' => 'required',
-            'duration_b' => 'required',
-            'period_s' => 'required',
-            'duration_s' => 'required',
+            //'period_b' => 'required',
+            //'duration_b' => 'required',
+            //'period_s' => 'required',
+            //'duration_s' => 'required',
         ]);
 
         if ($validator->fails()) {
@@ -131,10 +131,10 @@ class CourseController extends Controller
             'rating' => 'required',
             'cont_title' => 'required',
             'content' => 'required',
-            'period_b' => 'required',
-            'duration_b' => 'required',
-            'period_s' => 'required',
-            'duration_s' => 'required',
+            //'period_b' => 'required',
+            //'duration_b' => 'required',
+            //'period_s' => 'required',
+            //'duration_s' => 'required',
         ]);
 
         if ($validator->fails()) {
