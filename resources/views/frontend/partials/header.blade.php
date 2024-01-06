@@ -138,110 +138,106 @@
                                      </div>
 
                                  </div>
-                             </div>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="about-us">About Us</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="our-branche">Our Branche</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="contact-us">Contact Us</a>
-                         </li>
-                         <li class="nav-item login_btn pdrght40">
-                             <a class="nav-link" href="donation.php">Donation</a>
-                         </li>
-                         <!-- Navbar dropdown -->
-                     </ul>
-                     <!-- Left links -->
-                 </div>
-                 <!-- Container wrapper -->
-             </nav>
-         </div>
-     </section>
- </header>
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about-us">About Us</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="our-branche">Our Branche</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact-us">Contact Us</a>
+                           </li>
+                           <li class="nav-item login_btn pdrght40">
+                              <a class="nav-link" href="donation.php">Donation</a>
+                           </li>
+                           <!-- Navbar dropdown -->
+                        </ul>
+                        <!-- Left links -->
+                     </div>
+                  <!-- Container wrapper -->
+               </nav>
+            </div>
+         </section>
+      </header>
+      
+      
+      
+      <div class="mobile_header">
+      <div class="wrapper_menu">
+  <nav>
+    <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+    <label class="m-menu__toggle" for="menu">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#007695" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </label>
+    <label class="m-menu__overlay" for="menu"></label>
 
-
-
- <div class="mobile_header">
-     <div class="wrapper_menu">
-         <nav>
-             <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
-             <label class="m-menu__toggle" for="menu">
-                 <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#007695" stroke-width="2"
-                     stroke-linecap="butt" stroke-linejoin="arcs">
-                     <line x1="3" y1="12" x2="21" y2="12"></line>
-                     <line x1="3" y1="6" x2="21" y2="6"></line>
-                     <line x1="3" y1="18" x2="21" y2="18"></line>
-                 </svg>
-             </label>
-             <label class="m-menu__overlay" for="menu"></label>
-
-             <div class="m-menu">
-                 <div class="m-menu__header">
-                     <label class="m-menu__toggle" for="menu">
-                         <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"
-                             stroke-linecap="butt" stroke-linejoin="arcs">
-                             <line x1="18" y1="6" x2="6" y2="18"></line>
-                             <line x1="6" y1="6" x2="18" y2="18"></line>
-                         </svg>
-                     </label>
-                     <span>MENU</span>
-                 </div>
-                 <ul>
-                     <li><label>Home</label></li>
-                     <li>
-                         <label class="a-label__chevron" for="item-2">Courses</label>
-                         <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
-                         <div class="m-menu">
-                             <div class="m-menu__header">
-                                 <label class="m-menu__toggle" for="item-2">
-                                     <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                         stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
-                                         <path d="M19 12H6M12 5l-7 7 7 7" />
-                                     </svg>
-                                 </label>
-                                 <span>Item 2</span>
-                             </div>
-                             <ul>
-                                 <li><label>Item 2.1</label></li>
-                                 <li><label>Item 2.2</label></li>
-                                 <li>
-                                     <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
-                                     <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
-                                     <div class="m-menu">
-                                         <div class="m-menu__header">
-                                             <label class="m-menu__toggle" for="item-2-3">
-                                                 <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                                     stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                                     stroke-linejoin="arcs">
-                                                     <path d="M19 12H6M12 5l-7 7 7 7" />
-                                                 </svg>
-                                             </label>
-                                             <span>Item 2.3 </span>
-                                         </div>
-                                         <ul>
-                                             <li><label>Item 2.3.1</label></li>
-                                             <li><label>Item 2.3.2</label></li>
-                                             <li><label>Item 2.3.3</label></li>
-                                             <li><label>Item 2.3.4</label></li>
-                                             <li><label>Item 2.3.5</label></li>
-                                         </ul>
-                                 </li>
-                                 <li><label>Item 2.4</label></li>
-                                 <li><label>Item 2.5</label></li>
-                                 <li><label>Item 2.6</label></li>
-                                 <li><label>Item 2.7</label></li>
-                                 <li><label>Item 2.8</label></li>
-                                 <li><label>Item 2.9</label></li>
-                         </div>
-                     </li>
-                     <li><label>About Us</label></li>
-                     <li><label>Our Branch</label></li>
-                     <li><label>Contact Us</label></li>
-                 </ul>
-             </div>
-         </nav>
-     </div>
- </div>
+    <div class="m-menu">
+      <div class="m-menu__header">
+        <label class="m-menu__toggle" for="menu">
+          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </label>
+        <span>MENU</span>
+      </div>
+      <ul>
+        <li><label>Item 1</label></li>
+        <li>
+          <label class="a-label__chevron" for="item-2">Item 2</label>
+          <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="item-2">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7" />
+                </svg>
+              </label>
+              <span>Item 2</span>
+            </div>
+            <ul>
+              <li><label>Item 2.1</label></li>
+              <li><label>Item 2.2</label></li>
+              <li>
+                <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
+                <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
+                <div class="m-menu">
+                  <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="item-2-3">
+                      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                      </svg>
+                    </label>
+                    <span>Item 2.3 </span>
+                  </div>
+                  <ul>
+                    <li><label>Item 2.3.1</label></li>
+                    <li><label>Item 2.3.2</label></li>
+                    <li><label>Item 2.3.3</label></li>
+                    <li><label>Item 2.3.4</label></li>
+                    <li><label>Item 2.3.5</label></li>
+                  </ul>
+              </li>
+              <li><label>Item 2.4</label></li>
+              <li><label>Item 2.5</label></li>
+              <li><label>Item 2.6</label></li>
+              <li><label>Item 2.7</label></li>
+              <li><label>Item 2.8</label></li>
+              <li><label>Item 2.9</label></li>
+          </div>
+        </li>
+        <li><label>Item 3</label></li>
+        <li><label>Item 4</label></li>
+        <li><label>Item 5</label></li>
+        <li><label>Item 6</label></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</div>

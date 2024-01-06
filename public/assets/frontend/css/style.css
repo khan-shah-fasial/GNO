@@ -667,6 +667,10 @@ section.course .owl-carousel .owl-stage-outer {
     display: none !important;
 }
 
+#course .owl-dots {
+    display: none !important;
+}
+
 .course_dthed {
     color: #f7ae6a;
     text-align: center;
