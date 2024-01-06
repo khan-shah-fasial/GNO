@@ -3,7 +3,8 @@
 @section('page.title', 'Garib Nawaz Online Academy')
 
 @section('page.description',
-'Garib Nawaz Online Academy')
+    'Seedling & Associates is one of the best law firms in Delhi, India. We provide legal
+    assistance for startups, FDI, Property law, IP, and more')
 
 @section('page.type', 'website')
 
@@ -100,26 +101,23 @@
 
             <div class="col-lg-8">
                 <div class="contact_from" data-aos-once="true" data-aos="fade-up">
-
+                    
                     <form class="form-md">
-                        <div class="form-group">
-                            <input id="form_name1" name="name" placeholder="Your Name" class="form-control" type="text"
-                                required>
-
-                        </div>
-
-                        <div class="form-group">
-                            <input id="form_name2" class="form-control" placeholder="Email Address" type="text"
-                                placeholder="" required>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="form_name3" name="w3review" class="msgbox" placeholder="Message" rows="2"
-                                cols="93"></textarea>
-                        </div>
-                        <div class=" sendbtn text-start">
-                            <button type="button" href="#">Send Message</button>
-                        </div>
+                      <div class="form-group">
+                        <input id="form_name1" name="name" placeholder="Your Name"class="form-control" type="text" required>
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                        <input id="form_name2" class="form-control" placeholder="Email Address" type="text"  placeholder="" required>
+                      </div>
+                      
+                      <div class="3 form-group" >
+                        <textarea id="form_name3" name="w3review" class="msgbox" placeholder="Message"rows="2" cols="93"></textarea>
+                      </div>
+                      <div class=" sendbtn text-start">
+                      <button type="button" href="#">Send Message</button>
+                      </div>
                     </form>
 
 

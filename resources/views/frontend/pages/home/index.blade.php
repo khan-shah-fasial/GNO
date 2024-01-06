@@ -2,8 +2,7 @@
 
 @section('page.title', 'Garib Nawaz Online Academy')
 
-@section('page.description',
-'Garib Nawaz Online Academy')
+@section('page.description', 'Garib Nawaz Online Academy')
 
 @section('page.type', 'website')
 
