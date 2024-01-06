@@ -455,29 +455,6 @@ class IndexController extends Controller
 
         $other_courses = Courses::where('status', '1')->where('id', '!=', $detail->id)->orderBy('id', 'desc')->limit(5)->get();
 
-        /*
-        //$slug = str_replace('-', ' ', $slug);
-        $blog_Catg = BlogCategory::where('slug', $slug)->where('status', 1)->first();
-
-        if(!empty($blog_Catg)){
-            $blog = Blog::where('status', 1)->whereJsonContains('blog_category_ids', ''.$blog_Catg->id.'')->limit(3)->orderBy('id', 'desc')->get();
-        } else {
-            $blog = [];
-        }
-        
-
-        if(empty($detail->parent_id)){  
-            $focusAreaIds = json_decode($detail->focus_area, true);
-            $focusAreaIds = is_array($focusAreaIds) ? $focusAreaIds : [];
-
-            $child_detail = PracticeArea::where('status', 1)->whereIn('id', $focusAreaIds)->get();
-        } else  {
-            $child_detail = [];
-        }
-
-        */
-        
-
         return view('frontend.pages.course.detail', compact('detail','other_courses'));
 
     }
