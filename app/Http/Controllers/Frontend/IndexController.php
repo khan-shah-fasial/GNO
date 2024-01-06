@@ -243,7 +243,8 @@ class IndexController extends Controller
             $body .= "<tr><td><strong>Course Requested :</strong></td><td>" . ($services ?? 'Not provided') . "</td></tr></br>";
             $body .= "<tr><td><strong>Description :</strong></td><td>" . ($description ?? 'Not provided') . "</td></tr></br><p></p>";
         } else {
-            $body .= "<tr><td><strong>Qualification :</strong></td><td>" . ($qualification ?? 'Not provided') . "</td></tr></br><p></p>";
+            //$body .= "<tr><td><strong>Qualification :</strong></td><td>" . ($qualification ?? 'Not provided') . "</td></tr></br><p></p>";
+            $body .= "<p></p>";
         }
         
         /*
