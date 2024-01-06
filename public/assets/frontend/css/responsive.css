@@ -6,6 +6,27 @@
     .max-md-hidden {
         display: none;
     }
+
+    header {
+        z-index: 0;
+        position: relative;
+    }
+
+    .logo_width {
+        width: 146px;
+    }
+
+    .logo_width_mobile {
+        width: 70%;
+        float: left;
+        padding-left: 15px;
+        padding-top: 9px;
+    }
+
+    nav.header_width {
+        float: right;
+    }
+
     .counter .wrapper {
         flex-direction: column;
         gap: 15px;
@@ -28,6 +49,7 @@
     #branches img {
         width: 100%;
     }
+
     .top_bar .wrapper {
         flex-direction: column;
     }
@@ -79,6 +101,7 @@
     .mobile_header .wrapper {
         display: block !important;
     }
+
     .course_hero .left_wrapper .data_lang {
         display: flex;
         align-items: start;
@@ -105,9 +128,11 @@
     .mobile_header .wrapper_menu {
         display: block;
     }
+
     section.menu_bar {
         display: none;
     }
+
     .course_content .right_wrapper {
         display: none;
     }
@@ -125,15 +150,19 @@ nav {
     align-items: center;
     /* fade in checked menu */
 }
+
 nav.breadcrumb {
     justify-content: center;
 }
+
 nav .m-menu__checkbox {
     display: none;
 }
+
 nav label.m-menu__toggle {
     cursor: pointer;
 }
+
 nav .m-menu {
     position: absolute;
     top: 0;
@@ -154,6 +183,7 @@ nav .m-menu {
     overflow: hidden;
     background-color: #fff;
 }
+
 nav .m-menu__overlay {
     background-color: rgba(103, 103, 103, 0.5);
     position: absolute;
@@ -163,6 +193,7 @@ nav .m-menu__overlay {
     z-index: 1;
     display: none;
 }
+
 nav .m-menu__header {
     padding: 0 16px;
     height: 50px;
@@ -177,12 +208,14 @@ nav .m-menu__header {
     align-items: center;
     border-bottom: 1px solid #e8e8e8;
 }
+
 nav .m-menu__header span {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     width: 100%;
 }
+
 nav .m-menu .m-menu {
     -moz-transform: translate3d(480px, 0, 0);
     -o-transform: translate3d(480px, 0, 0);
@@ -190,12 +223,14 @@ nav .m-menu .m-menu {
     -webkit-transform: translate3d(480px, 0, 0);
     transform: translate3d(480px, 0, 0);
 }
+
 nav .m-menu ul {
     height: 100%;
     overflow-y: auto;
     list-style: none;
     padding-left: 0;
 }
+
 nav .m-menu ul li a,
 nav .m-menu ul li label {
     display: block;
@@ -209,6 +244,7 @@ nav .m-menu ul li label {
     border-bottom: 1px solid #e8e8e8;
     position: relative;
 }
+
 nav .m-menu ul li label.a-label__chevron::after {
     content: "";
     position: absolute;
@@ -227,9 +263,11 @@ nav .m-menu ul li label.a-label__chevron::after {
     margin-top: -5px;
     right: 16px;
 }
+
 nav .m-menu ul li .-invisible {
     border-bottom: 0;
 }
+
 nav .m-menu .m-menu label.m-menu__toggle {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -241,10 +279,12 @@ nav .m-menu .m-menu label.m-menu__toggle {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
-nav .m-menu__checkbox:checked ~ .m-menu__overlay {
+
+nav .m-menu__checkbox:checked~.m-menu__overlay {
     display: block;
 }
-nav .m-menu__checkbox:checked ~ .m-menu {
+
+nav .m-menu__checkbox:checked~.m-menu {
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -275,9 +315,11 @@ nav .m-menu__checkbox:checked ~ .m-menu {
     text-align: center;
     line-height: 22px !important;
 }
+
 body .pdleft40 {
     margin-left: 0px !important;
 }
+
 body .pdrght40 {
     margin-right: 0px !important;
 }
@@ -286,10 +328,12 @@ body .pdrght40 {
     gap: 7px;
     padding-left: 0;
 }
+
 .top_bar .button_area ul li {
     padding: 4px 7px;
     font-size: 10px;
 }
+
 select.goog-te-combo {
     background: transparent !important;
     padding-left: 0px;
@@ -297,14 +341,6 @@ select.goog-te-combo {
     border: 1px solid #ffffff6b !important;
     color: #ffffffde !important;
     font-size: 12px;
-}
-
-header {
-    background: white;
-    position: relative;
-    top: 0;
-    padding: 0;
-    z-index: 0;
 }
 
 @media screen and (min-width: 768px) {

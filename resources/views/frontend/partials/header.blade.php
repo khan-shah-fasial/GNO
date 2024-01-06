@@ -166,7 +166,8 @@
 
  <div class="mobile_header">
      <div class="wrapper_menu">
-         <nav>
+        <div class="logo_width_mobile"> <img class="logo_width" src="assets/frontend/images/logo.png" alt="" /></div>
+         <nav class="header_width">
              <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
              <label class="m-menu__toggle" for="menu">
                  <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#007695" stroke-width="2"
@@ -187,10 +188,10 @@
                              <line x1="6" y1="6" x2="18" y2="18"></line>
                          </svg>
                      </label>
-                     <span>MENU</span>
+                     <span>GNOA MENU</span>
                  </div>
                  <ul>
-                     <li><label>Home</label></li>
+                     <li><a href="index.php"><label>Home</label></a></li>
                      <li>
                          <label class="a-label__chevron" for="item-2">Courses</label>
                          <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
@@ -202,44 +203,15 @@
                                          <path d="M19 12H6M12 5l-7 7 7 7" />
                                      </svg>
                                  </label>
-                                 <span>Item 2</span>
+                                 <span></span>
                              </div>
                              <ul>
-                                 <li><label>Item 2.1</label></li>
-                                 <li><label>Item 2.2</label></li>
-                                 <li>
-                                     <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
-                                     <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
-                                     <div class="m-menu">
-                                         <div class="m-menu__header">
-                                             <label class="m-menu__toggle" for="item-2-3">
-                                                 <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
-                                                     stroke="#000000" stroke-width="2" stroke-linecap="butt"
-                                                     stroke-linejoin="arcs">
-                                                     <path d="M19 12H6M12 5l-7 7 7 7" />
-                                                 </svg>
-                                             </label>
-                                             <span>Item 2.3 </span>
-                                         </div>
-                                         <ul>
-                                             <li><label>Item 2.3.1</label></li>
-                                             <li><label>Item 2.3.2</label></li>
-                                             <li><label>Item 2.3.3</label></li>
-                                             <li><label>Item 2.3.4</label></li>
-                                             <li><label>Item 2.3.5</label></li>
-                                         </ul>
-                                 </li>
-                                 <li><label>Item 2.4</label></li>
-                                 <li><label>Item 2.5</label></li>
-                                 <li><label>Item 2.6</label></li>
-                                 <li><label>Item 2.7</label></li>
-                                 <li><label>Item 2.8</label></li>
-                                 <li><label>Item 2.9</label></li>
+                                 <li><label>Allah ka paigham</label></li>
                          </div>
                      </li>
-                     <li><label>About Us</label></li>
-                     <li><label>Our Branch</label></li>
-                     <li><label>Contact Us</label></li>
+                     <li><a href="about-us"><label>About Us</label></a></li>
+                     <li><a href="our-branche"><label>Our Branch</label></a></li>
+                     <li><a href="contact-us"><label>Contact Us</label></a></li>
                  </ul>
              </div>
          </nav>

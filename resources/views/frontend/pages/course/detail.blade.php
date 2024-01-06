@@ -181,7 +181,7 @@
                         <img src="{{ asset('storage/' . $detail->image) }}" alt="{{ $detail->alt_image }}" />
                     </div>
                     <div class="content">
-                        <h3 class="course_dthed arsenica_fonts pt-3 mb-4">{{ $detail->cont_title }}</h3>
+                        <h3 class="course_dthed arsenica_fonts pt-3 mb-4">{{ $detail->title }}</h3>
                         <div class="common_btn3 blue_bg">
                             <a target="_blank" href="https://online.gnoa.in/apex/f?p=104:11::::::">Apply & Get Instant
                                 Admission</a>

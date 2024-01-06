@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('page.title', 'Seedling Associates: Top Lawyers &amp; Law Firms in Delhi, India')
+@section('page.title', 'Garib Nawaz Online Academy')
 
 @section('page.description',
     'Seedling & Associates is one of the best law firms in Delhi, India. We provide legal

@@ -663,6 +663,7 @@ section.course .owl-carousel .owl-stage-outer {
 #course .owl-nav.disabled {
     display: block !important;
 }
+
 #course .owl-dots {
     display: none !important;
 }
@@ -1210,7 +1211,7 @@ section.course .owl-carousel .owl-stage-outer {
     color: #f7ae6a;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #ffffff !important;
 }
 
@@ -1377,10 +1378,10 @@ textarea:focus {
     border-bottom: 1px solid #000;
 }
 
-.contact_from input:valid + label,
-textarea:valid + label,
-textarea:focus + label,
-input:focus + label {
+.contact_from input:valid+label,
+textarea:valid+label,
+textarea:focus+label,
+input:focus+label {
     top: 15px;
     color: #5b5b5b;
 }
@@ -1941,11 +1942,11 @@ section.why_choose .font24 {
     color: rgb(238 169 67) !important;
 }
 
-.dropdown-hover:hover > .dropdown-menu {
+.dropdown-hover:hover>.dropdown-menu {
     display: inline-block;
 }
 
-.dropdown-hover > .dropdown-toggle:active {
+.dropdown-hover>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
