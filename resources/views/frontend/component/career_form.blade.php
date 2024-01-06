@@ -10,7 +10,7 @@
     </div>
 
     <div class="form-group">
-        <input id="form_name2" class="form-control" placeholder="Email Address" type="email" placeholder="" required>
+        <input id="form_name2" name="email" class="form-control" placeholder="Email Address" type="email" required>
     </div>
 
     <div class="form-group">

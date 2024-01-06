@@ -19,7 +19,9 @@ use App\Http\Controllers\backend\TrumbowygController;
 /*
 use App\Http\Controllers\backend\MediaCoverageController;
 use App\Http\Controllers\backend\PublicationController;
+*/
 use App\Http\Controllers\backend\ContactController;
+/*
 use App\Http\Controllers\backend\BusinessSettingController;
 use App\Http\Controllers\backend\ContactSettingController;
 use App\Http\Controllers\backend\AuthorController;
