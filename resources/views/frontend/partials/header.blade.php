@@ -27,6 +27,13 @@
          </div>
      </div>
      <!--top_bar Section -->
+     <!--------===========================================================================--------------------->
+     @php
+         $course = DB::table('courses')
+             ->where('status', '1')
+             ->get(['title', 'slug', 'status']);
+     @endphp
+     <!--------======================================================================-------------------------->
      <!--header Section-->
      <section class="menu_bar">
          <div class="container">
@@ -62,76 +69,24 @@
                                  Courses
                              </a>
                              <!-- Dropdown menu -->
-                             <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                             <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown"
+                                 style="border-top-left-radius: 0;
                                  border-top-right-radius: 0;
                                  ">
                                  <div class="row">
+
                                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
                                          <div class="list-group list-group-flush">
-                                             <a href="" class="list-group-item list-group-item-action">Allah ka
-                                                 paigham</a>
-                                             <a href="" class="list-group-item list-group-item-action">Aaiye urdu
-                                                 seekhiye</a>
-                                             <a href="" class="list-group-item list-group-item-action">Aqaid wa Fiqh</a>
-                                             <a href="" class="list-group-item list-group-item-action">Bahare
-                                                 Shariyat</a>
-                                             <a href="" class="list-group-item list-group-item-action">Aqeeda W khatme
-                                                 Nubuwwat</a>
-                                             <a href="" class="list-group-item list-group-item-action">Seerat E
-                                                 Mustafa</a>
-                                             <a href="" class="list-group-item list-group-item-action">Shamail E
-                                                 Mustafa</a>
-                                             <a href="" class="list-group-item list-group-item-action">Zakat</a>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
-                                         <div class="list-group list-group-flush">
-                                             <a href="" class="list-group-item list-group-item-action">Arabic
-                                                 Grammar</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E
-                                                 Hadith</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E Hajj</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E
-                                                 Namaz</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E
-                                                 Tariqat</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E
-                                                 Tasawwuf</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E Umra</a>
-                                             <a href="" class="list-group-item list-group-item-action">Faizan E Farz
-                                                 Uloom</a>
+                                             @foreach ($course as $row)
+                                                 <a href="{{ url(route('course-detail', ['slug' => $row->slug])) }}"
+                                                     class="list-group-item list-group-item-action">
+                                                     {{ $row->title }}
+                                                 </a>
+                                             @endforeach
 
                                          </div>
                                      </div>
-                                     <div class="col-md-6 col-lg-2 mb-3 mb-md-0">
-                                         <div class="list-group list-group-flush">
 
-                                             <a href="" class="list-group-item list-group-item-action">Sunnat E
-                                                 Nikah</a>
-                                             <a href="" class="list-group-item list-group-item-action">Tafseer</a>
-                                             <a href="" class="list-group-item list-group-item-action">Qurbani</a>
-                                             <a href="" class="list-group-item list-group-item-action">Imamat</a>
-                                             <a href="" class="list-group-item list-group-item-action">kitabullah ki
-                                                 batein</a>
-                                             <a href="" class="list-group-item list-group-item-action">Tafseer Siratul
-                                                 Jinan</a>
-                                             <a href="" class="list-group-item list-group-item-action">Taharat</a>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6 col-lg-2">
-                                         <div class="list-group list-group-flush">
-                                             <a href="" class="list-group-item list-group-item-action">Nahvi Tarkib</a>
-                                             <a href="" class="list-group-item list-group-item-action">Pre Aalim</a>
-                                             <a href="" class="list-group-item list-group-item-action">Qurani Sooraton
-                                                 ka ta’aruf</a>
-                                             <a href="" class="list-group-item list-group-item-action">Roze ke ahkam</a>
-                                             <a href="" class="list-group-item list-group-item-action">Sarfi Tehqiq</a>
-                                             <a href="" class="list-group-item list-group-item-action">Tajheez o
-                                                 takfeen</a>
-                                             <a href="" class="list-group-item list-group-item-action">Tarjamatul
-                                                 Quran</a>
-                                         </div>
-                                     </div>
 
                                      <div class="col-md-6 col-lg-3">
                                          <img class="menu_img" src="assets/frontend/images/dhanu3.jpeg">
@@ -166,8 +121,7 @@
 
  <div class="mobile_header">
      <div class="wrapper_menu">
-        <div class="logo_width_mobile"> <img class="logo_width" src="assets/frontend/images/logo.png" alt="" /></div>
-         <nav class="header_width">
+         <nav>
              <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
              <label class="m-menu__toggle" for="menu">
                  <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#007695" stroke-width="2"
@@ -182,36 +136,41 @@
              <div class="m-menu">
                  <div class="m-menu__header">
                      <label class="m-menu__toggle" for="menu">
-                         <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"
-                             stroke-linecap="butt" stroke-linejoin="arcs">
+                         <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                             stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
                              <line x1="18" y1="6" x2="6" y2="18"></line>
                              <line x1="6" y1="6" x2="18" y2="18"></line>
                          </svg>
                      </label>
-                     <span>GNOA MENU</span>
+                     <span>MENU</span>
                  </div>
                  <ul>
-                     <li><a href="index.php"><label>Home</label></a></li>
+                     <li><label>iteam</label></li>
                      <li>
                          <label class="a-label__chevron" for="item-2">Courses</label>
                          <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
                          <div class="m-menu">
                              <div class="m-menu__header">
                                  <label class="m-menu__toggle" for="item-2">
-                                     <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                                         stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                     <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                         stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                         stroke-linejoin="arcs">
                                          <path d="M19 12H6M12 5l-7 7 7 7" />
                                      </svg>
                                  </label>
-                                 <span></span>
+                                 <span>Item 2</span>
                              </div>
                              <ul>
-                                 <li><label>Allah ka paigham</label></li>
+                                 @foreach ($course as $row)
+                                     <li><label>
+                                             <a href="{{ url(route('course-detail', ['slug' => $row->slug])) }}"
+                                                 class="list-group-item list-group-item-action">
+                                                 {{ $row->title }}
+                                             </a>
+                                         </label></li>
+                                 @endforeach
+                             </ul>
                          </div>
-                     </li>
-                     <li><a href="about-us"><label>About Us</label></a></li>
-                     <li><a href="our-branche"><label>Our Branch</label></a></li>
-                     <li><a href="contact-us"><label>Contact Us</label></a></li>
                  </ul>
              </div>
          </nav>

@@ -63,49 +63,11 @@
                                  </li>
                              </ul>
                          </div>
-                         <div class="col-md-4">
-                             <h3 class="title">Enquire Now</h3>
-                             <form action="">
-                                 <input type="text" class="form-control" placeholder="Your Name" />
-                                 <input type="email" class="form-control" placeholder="Your Email" />
-                                 <select class="form-select select_drp_image" aria-label="Default select example">
-                                     <option selected value="">Allah ka paigham</option>
-                                     <option value="">Aaiye urdu seekhiye</option>
-                                     <option value="">Aqaid wa Fiqh</option>
-                                     <option value="">Bahare Shariyat</option>
-                                     <option value="">Aqeeda e khatme Nubuwwat</option>
-                                     <option value="">Arabic Grammar</option>
-                                     <option value="">Faizan e Hadith</option>
-                                     <option value="">Faizan e Hajj</option>
-                                     <option value="">Faizan e Namaz</option>
-                                     <option value="">Faizan e Tariqat</option>
-                                     <option value="">Faizan e Tasawwuf</option>
-                                     <option value="">Faizan e Umra</option>
-                                     <option value="">Faizan e Farz Uloom</option>
-                                     <option value="">Imamat</option>
-                                     <option value="">kitabullah ki batein</option>
-                                     <option value="">Nahvi Tarkib</option>
-                                     <option value="">Pre Aalim</option>
-                                     <option value="">Qurani Sooraton ka ta’aruf</option>
-                                     <option value="">Roze ke ahkam</option>
-                                     <option value="">Sarfi Tehqiq</option>
-                                     <option value="">Seerat e Mustafa</option>
-                                     <option value="">Shamail e Mustafa</option>
-                                     <option value="">Sunnat e Nikah</option>
-                                     <option value="">Tafseer</option>
-                                     <option value="">Tafseer Siratul Jinan</option>
-                                     <option value="">Taharat</option>
-                                     <option value="">Tajheez o takfeen</option>
-                                     <option value="">Tarjamatul Quran</option>
-                                     <option value="">Zakat</option>
-                                     <option value="">Qurbani</option>
-                                 </select>
-                                 <input class="form-control" type="text" placeholder="Message" />
-                                 <div class="text-center">
-                                     <button>Send a Message</button>
-                                 </div>
-                             </form>
-                         </div>
+
+
+                         @include('frontend.component.footer_form')
+
+
                      </div>
                  </div>
              </div>

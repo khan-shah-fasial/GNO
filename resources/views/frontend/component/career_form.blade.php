@@ -1,77 +1,64 @@
 <!---------================ career Form start =========---------------->
-<form class="contact_form" id="add_career_form" action="{{url(route('contact.create'))}}" method="post"
+<form class="contact_form" id="add_career_form" action="{{ url(route('contact.create')) }}" method="post"
     enctype="multipart/form-data">
     @csrf
-    <h3 class="mb-4" data-aos-once="true" data-aos="fade-up">Want to know more</h3>
     <input type="hidden" name="section" value="Career Form" data-aos-once="true" data-aos="fade-up" />
     <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
-    <div class="d-flex align-items-center flex-md-row flex-column gap-md-4">
-        <div class="mb-3 w-100">
-            <input type="text" class="form-control" name="name" placeholder="Enter Your Name" data-aos-once="true"
-                data-aos="fade-up" required />
-        </div>
-        <div class="mb-3 w-100">
-            <input type="email" class="form-control" name="email" placeholder="Enter Your Email" data-aos-once="true"
-                data-aos="fade-up" required />
-        </div>
-
-
-    </div>
-    <div class="d-flex align-items-center flex-md-row flex-column gap-md-4">
-        <div class="mb-3 w-100">
-            <input type="number" class="form-control" name="phone" placeholder=" Your Phone No" data-aos-once="true"
-                data-aos="fade-up" required />
-        </div>
-
-        <div class="mb-3 w-100">
-            <input type="text" class="form-control" name="qualification" placeholder="Qualification"
-                data-aos-once="true" data-aos="fade-up" required />
-        </div>
-
+    <div class="form-group">
+        <input id="form_name1" name="name" placeholder="Your Name"class="form-control" type="text" required>
 
     </div>
 
-    <div class="d-flex align-items-center gap-2">
+    <div class="form-group">
+        <input id="form_name2" name="email" class="form-control" placeholder="Email Address" type="email" required>
+    </div>
 
-        <div class="w-100 mb-3">
-            <label for="formFile" class="form-label">Upload Your CV</label>
-            <input class="form-control" type="file" name="cv" id="formFile" required accept=".pdf,.docx">
-        </div>
-		
+    <div class="form-group">
+        <input id="form_name1" name="phone" placeholder="Your Phone"class="form-control" type="Number" required>
+
     </div>
 
 
-<div class="d-flex align-items-center gap-2">
-
-		<div class="w-100 mb-3">
-           <div class="g-recaptcha" data-sitekey="{{env('GOOGLE_CAPTCHA_SITEKEY')}}"></div>
-		   </div>
+    <div class="form-group">
+        <input  id="form_name2" class="form-control" type="file" name="cv" id="formFile" required accept=".pdf,.docx">
+        <i class="fas fa-paperclip"></i><span class="resume-p">
+            <p>Upload Your Resume/CV</p>
+        </span>
     </div>
 
+    <input type="hidden" name="ref_url" value="{{ url()->previous() }}" data-aos-once="true" data-aos="fade-up" />
 
-    <div class="text-center">
-        <button class="contact_form_button" data-aos-once="true" data-aos="fade-up">SUBMIT</button>
+    <div class=" sendbtn text-start">
+        <button class="carrer-btn" data-aos-once="true" data-aos="fade-up">SUBMIT</button>
     </div>
+
+    </div>
+    </div>
+
+    <div class="col-md-3">
+        <img src="img/barshi9.jpeg" alt="book" width="320px" height="507px" class="carrer-img">
+    </div>
+
 
 </form>
 <!---------================ career Form end =========---------------->
 
 @section('component.scripts')
-<script>
-$(document).ready(function() {
-    initValidate('#add_career_form');
-    $("#add_career_form").submit(function(e) {
-        var form = $(this);
-        ajaxSubmit(e, form, responseHandler);
-    });
+    <script>
+        $(document).ready(function() {
+            initValidate('#add_career_form');
+            $("#add_career_form").submit(function(e) {
+                var form = $(this);
+                ajaxSubmit(e, form, responseHandler);
+            });
 
-    var responseHandler = function(response) {
-        $('input, textarea').val('');
-        $("select option:first").prop('selected', true);
-        setTimeout(function() {
-            location.reload();
-        }, 2000);
-    }
-});
-</script>
+            var responseHandler = function(response) {
+                $('input, textarea').val('');
+                $("select option:first").prop('selected', true);
+                setTimeout(function() {
+                    location.reload();
+                }, 2000);
+            }
+        });
+    </script>
 @endsection

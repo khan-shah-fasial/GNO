@@ -2,12 +2,20 @@
 
 @section('page.title', 'Garib Nawaz Online Academy')
 
-@section('page.description',
-'Garib Nawaz Online Academy')
+@section('page.description', 'Garib Nawaz Online Academy')
 
 @section('page.type', 'website')
 
 @section('page.content')
+
+<!---=================================-------------------------------->
+@php
+$course = DB::table('courses')
+->where('status', '1')
+->get(['title', 'slug', 'status','short_description','rating','image','alt_image']);
+@endphp
+
+<!-----================================----------------------->
 
 <!-----===== home content start============---->
 
@@ -65,37 +73,10 @@
                         </h2>
                     </div>
                     <div>
-                        <select class="form-select select_drp_image" aria-label="Default select example">
-                            <option selected value="">Allah ka paigham</option>
-                            <option value="">Aaiye urdu seekhiye</option>
-                            <option value="">Aqaid wa Fiqh</option>
-                            <option value="">Bahare Shariyat</option>
-                            <option value="">Aqeeda e khatme Nubuwwat</option>
-                            <option value="">Arabic Grammar</option>
-                            <option value="">Faizan e Hadith</option>
-                            <option value="">Faizan e Hajj</option>
-                            <option value="">Faizan e Namaz</option>
-                            <option value="">Faizan e Tariqat</option>
-                            <option value="">Faizan e Tasawwuf</option>
-                            <option value="">Faizan e Umra</option>
-                            <option value="">Faizan e Farz Uloom</option>
-                            <option value="">Imamat</option>
-                            <option value="">kitabullah ki batein</option>
-                            <option value="">Nahvi Tarkib</option>
-                            <option value="">Pre Aalim</option>
-                            <option value="">Qurani Sooraton ka ta’aruf</option>
-                            <option value="">Roze ke ahkam</option>
-                            <option value="">Sarfi Tehqiq</option>
-                            <option value="">Seerat e Mustafa</option>
-                            <option value="">Shamail e Mustafa</option>
-                            <option value="">Sunnat e Nikah</option>
-                            <option value="">Tafseer</option>
-                            <option value="">Tafseer Siratul Jinan</option>
-                            <option value="">Taharat</option>
-                            <option value="">Tajheez o takfeen</option>
-                            <option value="">Tarjamatul Quran</option>
-                            <option value="">Zakat</option>
-                            <option value="">Qurbani</option>
+                        <select class="form-select select_drp_image" id="courseSelect" aria-label="Default select example">
+                            @foreach ($course as $row)
+                                <option value="{{ $row->slug }}">{{ $row->title }}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
@@ -107,12 +88,6 @@
 <!-------------------------- Welcome Section --------------------- -->
 
 <!-------------------------- course Section --------------------- -->
-
-@php
-$course = DB::table('courses')
-->where('status', '1')
-->get();
-@endphp
 
 @if (!empty($course))
 <section class="course">
@@ -574,4 +549,18 @@ $course = DB::table('courses')
 </section>
 
 
+@endsection
+
+@section('component.scripts')
+<script>
+    // Get the select element by its ID
+    var courseSelect = document.getElementById('courseSelect');
+
+    // Add an event listener to the select element
+    courseSelect.addEventListener('change', function() {
+        // Redirect to the selected option's value
+        var selectedOption = courseSelect.options[courseSelect.selectedIndex].value;
+        window.location.href = '{{ url('/course')  }}/' + selectedOption; // Assuming "course-detail" is the route name
+    });
+</script>
 @endsection

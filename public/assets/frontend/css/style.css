@@ -668,6 +668,10 @@ section.course .owl-carousel .owl-stage-outer {
     display: none !important;
 }
 
+#course .owl-dots {
+    display: none !important;
+}
+
 .course_dthed {
     color: #f7ae6a;
     text-align: center;
@@ -2001,13 +2005,13 @@ section.footer span.customSelect.form-select.select_drp_image {
     display: none !important;
 }
 
+.course_content ul li {
+    font-size: 14px !important;
+    line-height: 26px !important;
+}
+
 .content-terms ul li {
     font-size: 14px !important;
     line-height: 26px !important;
     margin-left: 35px;
-}
-
-.course_content ul li {
-    font-size: 14px !important;
-    line-height: 26px !important;
 }

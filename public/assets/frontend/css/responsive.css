@@ -37,7 +37,7 @@
         float: right;
     }
 
-    .counter .wrapper {
+    =======>>>>>>>645752c8c7e64af86902572b04283094f9b1fa90 .counter .wrapper {
         flex-direction: column;
         gap: 15px;
         text-align: center;
@@ -362,6 +362,14 @@ select.goog-te-combo {
     border: 1px solid #ffffff6b !important;
     color: #ffffffde !important;
     font-size: 12px;
+}
+
+header {
+    background: white;
+    position: relative;
+    top: 0;
+    padding: 0;
+    z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
