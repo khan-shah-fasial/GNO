@@ -12,7 +12,7 @@
 @section('page.content')
 
 
-<!-------------------------- courses details Section--------------------- -->
+<!-------------------------- courses details Section----------------------->
 
 <div class="course_hero" data-aos-once="true" data-aos="fade-up">
     <div class="container">
@@ -139,7 +139,7 @@
                 </div>
 
 
-                <div class="course_about" data-aos-once="true" data-aos="fade-up">
+                <!-- <div class="course_about" data-aos-once="true" data-aos="fade-up">
                     <h3 class="course_heading mb-0 pt-5">
                         Course content
                     </h3>
@@ -152,7 +152,7 @@
                         countries of the globe.
                     </p>
 
-                </div>
+                </div> -->
 
 
                 <!--<div class="course_certificate mt-5" data-aos-once="true" data-aos="fade-up">

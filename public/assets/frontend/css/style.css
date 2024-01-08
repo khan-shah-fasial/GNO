@@ -1994,9 +1994,20 @@ section.footer select.form-select.select_drp_image.hasCustomSelect {
     position: relative !important;
     opacity: inherit !important;
     height: 38px !important;
-    font-size: 16px;
+    font-size: 14px !important;
 }
 
 section.footer span.customSelect.form-select.select_drp_image {
     display: none !important;
+}
+
+.content-terms ul li {
+    font-size: 14px !important;
+    line-height: 26px !important;
+    margin-left: 35px;
+}
+
+.course_content ul li {
+    font-size: 14px !important;
+    line-height: 26px !important;
 }

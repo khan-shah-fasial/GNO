@@ -3,8 +3,18 @@
         padding: 30px 0;
     }
 
+    .aboutus {
+        padding: 20px 0 10px 0px;
+    }
+
     .max-md-hidden {
         display: none;
+    }
+
+    .inner_titles {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
     }
 
     header {
@@ -113,6 +123,17 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .top_bar .wrapper {
         flex-direction: column;
+    }
+
+    .logo_width_mobile {
+        width: 70%;
+        float: left;
+        padding-left: 15px;
+        padding-top: 9px;
+    }
+
+    nav.header_width {
+        float: right;
     }
 
     .contact_from .form-md {
