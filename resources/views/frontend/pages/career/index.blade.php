@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <section class="career-page">
+    <section class="career-page pt-5 pb-5">
         <div class="container">
             <div class="career-lm">
                 <div class="row">

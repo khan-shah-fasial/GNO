@@ -75,7 +75,7 @@
                                  ">
                                  <div class="row">
 
-                                     <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                     <div class="col-md-10 col-lg-10 mb-3 mb-lg-0">
                                          <div class="list-group list-group-flush">
                                              @foreach ($course as $row)
                                                  <a href="{{ url(route('course-detail', ['slug' => $row->slug])) }}"
@@ -88,7 +88,7 @@
                                      </div>
 
 
-                                     <div class="col-md-6 col-lg-3">
+                                     <div class="col-md-2 col-lg-2">
                                          <img class="menu_img" src="assets/frontend/images/dhanu3.jpeg">
                                      </div>
 
@@ -121,7 +121,14 @@
 
  <div class="mobile_header">
      <div class="wrapper_menu">
-         <nav>
+
+       <div class="mobile_logo">
+          <a href="index.php">
+              <img class="logo_width" src="assets/frontend/images/logo.png" alt="" />
+           </a>
+       </div>
+
+         <nav class="nav_mobile">
              <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
              <label class="m-menu__toggle" for="menu">
                  <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#007695" stroke-width="2"
@@ -142,10 +149,10 @@
                              <line x1="6" y1="6" x2="18" y2="18"></line>
                          </svg>
                      </label>
-                     <span>MENU</span>
+                     <span>GNOA Menu</span>
                  </div>
                  <ul>
-                     <li><label>iteam</label></li>
+                     <li><label> <a href="{{ url(route('index')) }}">Home</a></label></li>
                      <li>
                          <label class="a-label__chevron" for="item-2">Courses</label>
                          <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
@@ -158,7 +165,7 @@
                                          <path d="M19 12H6M12 5l-7 7 7 7" />
                                      </svg>
                                  </label>
-                                 <span>Item 2</span>
+                                 <span>Courses</span>
                              </div>
                              <ul>
                                  @foreach ($course as $row)
@@ -171,7 +178,14 @@
                                  @endforeach
                              </ul>
                          </div>
+</li>
+<li><label> <a href="about-us">About Us</a></label></li>
+<li><label> <a href="our-branche">Our Branche</a></label></li>
+<li><label> <a href="contact-us">Contact Us</a></label></li>
+
                  </ul>
+
+                 
              </div>
          </nav>
      </div>

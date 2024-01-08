@@ -19,9 +19,9 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="left_wrapper">
-                        <h2 class="heading mb-4 arsenica_fonts" data-aos-once="true" data-aos="fade-up">{{ $detail->title }}
+                        <h2 class="heading mb-lg-4 mb-2 arsenica_fonts" data-aos-once="true" data-aos="fade-up">{{ $detail->title }}
                         </h2>
-                        <p class="text_justify pe-5" data-aos-once="true" data-aos="fade-up">
+                        <p class="text_justify pe-lg-5 pe-0" data-aos-once="true" data-aos="fade-up">
                             {{ $detail->short_description }}
                         </p>
 
@@ -60,8 +60,20 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-4 ">
+                  <div class="col-md-4 sticky d-lg-none d-block">
+                    <div class="right_wrapper courseTop">
+                        <div class="course_dtimg">
+                            <img src="{{ asset('storage/' . $detail->image) }}" alt="{{ $detail->alt_image }}" />
+                        </div>
+                        <div class="content">
+                            <h3 class="course_dthed arsenica_fonts pt-3 mb-4">{{ $detail->title }}</h3>
+                            <div class="common_btn3 blue_bg">
+                                <a target="_blank" href="https://online.gnoa.in/apex/f?p=104:11::::::">Apply & Get Instant
+                                    Admission</a>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,22 +151,6 @@
                     </div>
 
 
-                <div class="course_about" data-aos-once="true" data-aos="fade-up">
-                    <h3 class="course_heading mb-0 pt-5">
-                        Course content
-                    </h3>
-                    <p class="text_justify">
-                        We welcome our users to Online Quran teaching services where we
-                        are offering multiple Islamic as well as character building and
-                        life reformation courses as per the teachings of Sharia.
-                        Thousands of individuals have learned to read Quran with these
-                        online Quran classes service in Pakistan and many other
-                        countries of the globe.
-                    </p>
-
-                </div>
-
-
                     <!--<div class="course_certificate mt-5" data-aos-once="true" data-aos="fade-up">
                       <h3 class="course_heading mb-4">Get a Shareable Certificate</h3>
                        <div class="owl-carousel owl-theme" id="book_slider">
@@ -218,7 +214,7 @@
                                                 {{ $row->short_description }}
                                             </p>
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-6">
                                                     <div class="social_icons">
                                                         <i class="fa-solid fa-star"></i>
                                                         <i class="fa-solid fa-star"></i>
@@ -228,7 +224,7 @@
                                                         <span>{{ $row->rating }}</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-6">
                                                     <div class="arrow_btn_slider">
                                                         <a
                                                             href="{{ url(route('course-detail', ['slug' => $row->slug])) }}"><i

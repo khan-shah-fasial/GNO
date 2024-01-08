@@ -25,8 +25,8 @@
                                          data-aos="fade-up">+91-9137589497</a>
                                  </p>
                                  <div class="social_icon" data-aos-once="true" data-aos="fade-up">
-                                     <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                     <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                     <a target="_blank" href="https://www.facebook.com/garibnawazonlineacademy/"><i class="fa-brands fa-facebook"></i></a>
+                                     <a target="_blank" href="https://www.instagram.com/Garibnawazonlineacademy/"><i class="fa-brands fa-instagram"></i></a>
                                      <a href=""><i class="fa-brands fa-twitter"></i></a>
                                      <a href="">Lets get together</a>
                                  </div>
@@ -59,7 +59,7 @@
                                  </li>
 
                                  <li>
-                                     <a href="donation.php"> Donation</a>
+                                     <a href="#"> Donation</a>
                                  </li>
                              </ul>
                          </div>
@@ -76,7 +76,7 @@
                  <div class="footer_bottom">
                      <a href="https://online.gnoa.in/apex/f?p=104:11::::::"
                          target="_blank"><button>Registration</button></a>
-                     <p>Copyright © 2023 GNOA. All rights reserved.</p>
+                     <p>Copyright © 2024 GNOA. All rights reserved.</p>
                      <p>Design By <a target="_blank" href="https://nexgeno.in/">NEXGENO</a></p>
                      <button>Donation</button>
                  </div>
@@ -90,27 +90,10 @@
          <div class="modal-content">
              <div class="popup_wrapper">
                  <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close">
-                     <img src="/img/remove.png" alt="" />
+                     <img src="assets/frontend/images/remove.png" alt="" />
                  </button>
 
-                 <h3 class="text-center">Enquire Now</h3>
-                 <form>
-                     <input type="text" placeholder="Write Your Name" class="form-control" />
-                     <input type="text" placeholder="Write Your Email ID" class="form-control" />
-                     <input type="text" placeholder="Write Your Mobile Number" class="form-control" />
-                     <select class="form-select">
-                         <option value="">Course</option>
-                         <option value="">Course</option>
-                         <option value="">Course</option>
-                         <option value="">Course</option>
-                     </select>
-                     <select class="form-select">
-                         <option value="">Gender</option>
-                         <option value="">Male</option>
-                         <option value="">Female</option>
-                     </select>
-                     <button>Submit</button>
-                 </form>
+                  @include('frontend.component.popup_form')
              </div>
          </div>
      </div>

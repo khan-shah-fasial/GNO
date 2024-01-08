@@ -102,12 +102,16 @@ $course = DB::table('courses')
                 <div class="owl-carousel owl-theme" id="course">
                     @foreach ($course as $row)
                     <div class="item" data-aos-once="true" data-aos="fade-up">
+                    
                         <div class="card_course">
                             <div class="overlay">
                                 <img src="{{ asset('storage/' . $row->image) }}" alt="{{ $row->alt_image }}"
                                     data-aos-once="true" data-aos="fade-up" />
                             </div>
+                             
+                            <a href="{{ url(route('course-detail', ['slug' => $row->slug])) }}">   
                             <div class="card_content">
+                                
                                 <h3 class="title  arsenica_fonts" data-aos-once="true" data-aos="fade-up">
                                     {{ $row->title }}
                                 </h3>
@@ -127,14 +131,15 @@ $course = DB::table('courses')
                                     </div>
                                     <div class="col-md-6">
                                         <div class="arrow_btn_slider">
-                                            <a href="{{ url(route('course-detail', ['slug' => $row->slug])) }}"><i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                            <i class="fa-solid fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </div>
-
+                                
                             </div>
+                            </a>
                         </div>
+
                     </div>
                     @endforeach
                 </div>
@@ -251,7 +256,7 @@ $course = DB::table('courses')
                         & Nazra Course
                     </h2>
                     <a target="_blank" href="https://online.gnoa.in/apex/f?p=104:11::::::"
-                        class="common_btn mt-5">Register Now</a>
+                        class="common_btn mt-lg-5 mt-3">Register Now</a>
                 </div>
             </div>
         </div>
@@ -434,7 +439,7 @@ $course = DB::table('courses')
                         <h2 class="heading arsenica_fonts" data-aos-once="true" data-aos="fade-up">
                             Our Branches
                         </h2>
-                        <p data-aos-once="true" data-aos="fade-up">
+                        <p class="mb-0" data-aos-once="true" data-aos="fade-up">
                             We welcome our users to Online Quran teaching services where
                             we are offering multiple Islamic as well as character building
                             and life reformation courses as per the teachings of Sharia.

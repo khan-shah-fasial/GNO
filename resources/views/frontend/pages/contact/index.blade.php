@@ -82,13 +82,13 @@
                     <h4 class="arsenica_fonts blue_clr">Follow Us On Social Media</h4>
                     <ul>
                         <li>
-                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a target="_blank" href="https://web.whatsapp.com/send?phone=+91-9137589497&text=Hi,%20I%20have%20some%20questions%20about%20this%20page:%20http://127.0.0.1:8000/contact-us!"><i class="fa-brands fa-whatsapp"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/garibnawazonlineacademy/"><i class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/Garibnawazonlineacademy/" ><i class="fa-brands fa-instagram"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -98,25 +98,9 @@
             </div>
 
             <div class="col-lg-8">
-                <div class="contact_from" data-aos-once="true" data-aos="fade-up">
+                <div class="contact_from pt-5" data-aos-once="true" data-aos="fade-up">
                     
-                    <form class="form-md">
-                      <div class="form-group">
-                        <input id="form_name1" name="name" placeholder="Your Name"class="form-control" type="text" required>
-                        
-                      </div>
-                      
-                      <div class="form-group">
-                        <input id="form_name2" class="form-control" placeholder="Email Address" type="text"  placeholder="" required>
-                      </div>
-                      
-                      <div class="3 form-group" >
-                        <textarea id="form_name3" name="w3review" class="msgbox" placeholder="Message"rows="2" cols="93"></textarea>
-                      </div>
-                      <div class=" sendbtn text-start">
-                      <button type="button" href="#">Send Message</button>
-                      </div>
-                    </form>
+                    @include('frontend.component.contact_us_form')
 
 
                 </div>

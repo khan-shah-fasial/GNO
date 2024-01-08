@@ -37,7 +37,7 @@
         float: right;
     }
 
-    =======>>>>>>>645752c8c7e64af86902572b04283094f9b1fa90 .counter .wrapper {
+    .counter .wrapper {
         flex-direction: column;
         gap: 15px;
         text-align: center;
@@ -96,12 +96,36 @@
     }
 
     .heading {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 30px;
     }
 
     .testimonial .wrapper div {
         width: 285px;
+    }
+
+    .mobile_logo {
+        width: 42% !important;
+        float: left;
+        padding-top: 8px;
+        padding-left: 15px;
+    }
+
+    .right_wrapper .common_btn {
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .register {
+        padding: 70px 0 50px 0;
+    }
+
+    .gallery .left_wrapper div:nth-child(1) {
+        gap: 0px;
+    }
+
+    nav.nav_mobile {
+        float: right;
     }
 
     .footer .footer_bottom {
@@ -117,6 +141,19 @@
         align-items: start;
         flex-direction: column;
         gap: 6px;
+    }
+
+    .popup_wrapper {
+        padding: 32px 20px;
+        background-image: url(/assets/frontend/images/popup_bg.png);
+    }
+
+    .courseTop {
+        margin-top: 0;
+    }
+
+    .right_wrapper .content {
+        padding: 0px 12px 20px;
     }
 }
 
@@ -252,16 +289,32 @@ nav .m-menu ul {
     padding-left: 0;
 }
 
-nav .m-menu ul li a,
+nav .m-menu ul li a {
+    display: block;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    text-align: left;
+    line-height: 40px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 0px solid #e8e8e8;
+    position: relative;
+}
+
+
 nav .m-menu ul li label {
     display: block;
     text-align: left;
     padding: 0 15px;
-    line-height: 47px;
+    line-height: 40px;
     text-decoration: none;
     color: #333;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 14px;
     border-bottom: 1px solid #e8e8e8;
     position: relative;
 }
@@ -364,13 +417,6 @@ select.goog-te-combo {
     font-size: 12px;
 }
 
-header {
-    background: white;
-    position: relative;
-    top: 0;
-    padding: 0;
-    z-index: 0;
-}
 
 @media screen and (min-width: 768px) {
     .md-hidden {
