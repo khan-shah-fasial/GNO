@@ -8,11 +8,11 @@
 
 <div class="col-md-12">
     <h3 class="title text-center">Enquire Now</h3>
-    <form class="contact_form" id="add_footer_form" action="{{ url(route('contact.create')) }}" method="post"
+    <form class="contact_form" id="add_popup_form" action="{{ url(route('contact.create')) }}" method="post"
         enctype="multipart/form-data">
         @csrf
 
-        <input type="hidden" name="section" value="Footer Form" data-aos-once="true" data-aos="fade-up" />
+        <input type="hidden" name="section" value="Popup Form" data-aos-once="true" data-aos="fade-up" />
         <input type="hidden" name="url" value="{{ url()->current() }}" data-aos-once="true" data-aos="fade-up" />
 
         <input type="text" name="name"  class="form-control" placeholder="Your Name" required>
@@ -27,7 +27,7 @@
             @endforeach
         </select>
 
-         <select class="form-select select_drp_image select2" name="services" aria-label="Default select example" required>
+         <select class="form-select select_drp_image select2" name="gender" aria-label="Default select example" required>
             <option selected value="">Select Gender</option>
            
                 <option value="male">Male</option>

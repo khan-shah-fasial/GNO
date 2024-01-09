@@ -8,6 +8,9 @@
     @if($contact->phone)
     <p><strong>Phone:</strong> {{$contact->phone}}</p>
     @endif
+    @if($contact->gender)
+    <p><strong>Gender:</strong> {{$contact->gender}}</p>
+    @endif
     @if($contact->services)
     <p><strong>Services:</strong> {{$contact->services}}</p>
     @endif

@@ -211,6 +211,7 @@ class IndexController extends Controller
         $email = isset($contactData["email"]) ? $contactData["email"] : ' - ';
         $phone = isset($contactData["phone"]) ? $contactData["phone"] : ' - ';
         $services = isset($contactData["services"]) ? $contactData["services"] : ' - ';
+        $gender = isset($contactData["gender"]) ? $contactData["gender"] : ' - ';
         $description = isset($contactData["description"]) ? $contactData["description"] : ' - ';
         //$ip = isset($contactData["ip"]) ? $contactData["ip"] : ' - ';
         $section = isset($contactData["section"]) ? $contactData["section"] : ' - ';
@@ -238,6 +239,12 @@ class IndexController extends Controller
         $body .= "<tr><td><strong>Full Name :</strong></td><td>" . $name . "</td></tr></br>";
         $body .= "<tr><td><strong>Email Address :</strong></td><td>" . $email . "</td></tr></br>";
         $body .= "<tr><td><strong>Phone Number :</strong></td><td>" . $phone . "</td></tr></br>";
+        if(isset($contactData["gender"])){
+            $body .= "<tr><td><strong>Gender :</strong></td><td>" . $gender . "</td></tr></br>";
+        }
+
+
+
 
         if (isset($contactData["description"]) || isset($contactData["services"])) {
             $body .= "<tr><td><strong>Course Requested :</strong></td><td>" . ($services ?? 'Not provided') . "</td></tr></br>";
