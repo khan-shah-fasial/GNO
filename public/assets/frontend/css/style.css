@@ -72,11 +72,11 @@ header {
 }
 
 .select_drp_image {
-    background-image: url(/assets/frontend/images/down.png) !important;
-    background-position: calc(100% - 19px) calc(1em + 10px),
-        calc(100% - 15px) calc(1em + 2px), 100% 0 !important;
-    background-repeat: no-repeat !important;
     -webkit-appearance: none !important;
+}
+
+span.customSelect.form-select.select_drp_image.select2 {
+    display: none !important;
 }
 
 select option {
@@ -333,7 +333,7 @@ body .pdrght40 {
     background-color: #fffffff2 !important;
     border: 0px solid rgba(0, 0, 0, 0.15) !important;
     border-top: 1px solid #cccccc7d !important;
-    margin-top: -1px !important;
+    margin-top: -7px !important;
 }
 
 .list-group-item {
@@ -559,10 +559,11 @@ section.course .owl-carousel .owl-stage-outer {
 .card_course img {
     width: 100%;
     border-radius: 25px 25px 0 0;
+    transition: 0.5s all;
 }
 
 .card_course:hover img {
-    transform: scale(1.3) !important;
+    transform: scale(1.1) !important;
 }
 
 .card_course .card_content {
@@ -900,7 +901,7 @@ section.course .owl-carousel .owl-stage-outer {
 }
 
 .testimonial .wrapper div {
-    width: 475px;
+    width: 775px;
     text-align: center;
 }
 
@@ -2067,4 +2068,12 @@ span.customSelect.form-select.select_drp_image.select2 {
 
 .course_other .card_content {
     box-shadow: none !important;
+}
+
+select.form-select.select_drp_image.select2.hasCustomSelect {
+    width: 100% !important;
+    position: relative !important;
+    opacity: initial !important;
+    height: auto !important;
+    font-size: 16px;
 }

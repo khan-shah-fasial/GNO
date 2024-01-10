@@ -25,23 +25,23 @@ $course = DB::table('courses')
             <div class="carousel-item active hvr-bounce-in">
                 <div class="banner">
                     <a href="">
-                        <img src="assets/frontend/images/banner_31.jpg" class="d-block w-100" alt="..." />
+                        <img src="assets/frontend/images/slider_banner1.jpg" class="d-block w-100" alt="..." />
                         <img src="assets/frontend/images/children2.png" alt="" class="children" />
                     </a>
                 </div>
             </div>
             <div class="carousel-item hvr-bounce-in">
                 <div class="banner">
-                    <a href="">
-                        <img src="assets/frontend/images/banner_3.jpg" class="d-block w-100" alt="..." />
+                    <a href="#">
+                        <img src="assets/frontend/images/slider_banner2.jpg" class="d-block w-100" alt="..." />
                         <img src="assets/frontend/images/bhare.png" alt="" class="children" />
                     </a>
                 </div>
             </div>
             <div class="carousel-item hvr-bounce-in">
                 <div class="banner">
-                    <a href="">
-                        <img src="assets/frontend/images/banner_4.jpg" class="d-block w-100" alt="..." />
+                    <a href="/course/bahar-e-shariat">
+                        <img src="assets/frontend/images/slider_banner3.jpg" class="d-block w-100" alt="..." />
                         <img src="assets/frontend/images/derse.png" alt="" class="children" />
                     </a>
                 </div>
@@ -119,7 +119,7 @@ $course = DB::table('courses')
                                     {{ $row->short_description }}
                                 </p>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-6">
                                         <div class="social_icons">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -129,7 +129,7 @@ $course = DB::table('courses')
                                             <span>{{ $row->rating }}</span>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-6">
                                         <div class="arrow_btn_slider">
                                             <i class="fa-solid fa-arrow-right"></i>
                                         </div>
@@ -280,12 +280,10 @@ $course = DB::table('courses')
                         <img src="assets/frontend/images/why_1.png" alt="" data-aos-once="true" data-aos="fade-up" />
                     </div>
                     <h2 class="font24" data-aos-once="true" data-aos="fade-up">
-                        Expert Quran Tutor
+                        Comprehensive Curriculum
                     </h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                        All the classes of online Quran teaching are conducted by well
-                        qualified Islamic scholars and expert Quran tutors who will
-                        teach you the recitation of Quran as per Arabic phonetics
+                        Our online Quran courses cover a wide range of Islamic studies, character building, and life reformation topics, providing a holistic educational experience.
                     </p>
                 </div>
             </div>
@@ -296,12 +294,10 @@ $course = DB::table('courses')
                     </div>
 
                     <h2 class="font24" data-aos-once="true" data-aos="fade-up">
-                        We Value Our Students
+                         Experienced Instructors
                     </h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                        We value each and every student and that is why every student is
-                        being taught by a teacher individually so that students can
-                        learn everything in an efficient manner.
+                       GNOA boasts a team of experienced and knowledgeable Islamic scholars and Quran tutors who are dedicated to facilitating a deep understanding of the Quranic teachings.
                     </p>
                 </div>
             </div>
@@ -312,12 +308,10 @@ $course = DB::table('courses')
                     </div>
 
                     <h2 class="font24" data-aos-once="true" data-aos="fade-up">
-                        Male Female Teacher
+                         Gender-Specific Instruction:
                     </h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                        We have many well qualified and expert male and female Quran
-                        tutors and as per the teachings of Sharia we offer separate
-                        teachers for male and females accordingly.
+                        Following Sharia principles, we offer separate male and female instructors, creating a comfortable and respectful learning atmosphere for all students.
                     </p>
                 </div>
             </div>
@@ -327,11 +321,9 @@ $course = DB::table('courses')
                         <img src="assets/frontend/images/why_4.png" alt="" data-aos-once="true" data-aos="fade-up" />
                     </div>
 
-                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Flexible Timing</h2>
+                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Flexibility and Convenience:</h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                        We are online 24/7 so; Muslims from all around the world can
-                        select online Quran classes timing as per their conformity and
-                        availability.
+                       Our 24/7 online availability allows students from around the world to choose class timings that align with their schedules, promoting flexibility and convenience.
                     </p>
                 </div>
             </div>
@@ -341,11 +333,9 @@ $course = DB::table('courses')
                         <img src="assets/frontend/images/why_5.png" alt="" data-aos-once="true" data-aos="fade-up" />
                     </div>
 
-                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Deferent Language</h2>
+                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Multilingual Support</h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                        We have many years of experience in online Quran teaching, we
-                        value our clients and that's why we offer a free trial of 3-days
-                        so you can evaluate our teaching skills.
+                        Recognizing the diversity of our student base, GNOA offers multilingual support, ensuring that language is not a barrier to understanding the teachings of the Quran.
                     </p>
                 </div>
             </div>
@@ -355,10 +345,9 @@ $course = DB::table('courses')
                         <img src="assets/frontend/images/why_6.png" alt="" data-aos-once="true" data-aos="fade-up" />
                     </div>
 
-                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Certificate</h2>
+                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Certification of Completion</h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                        We provide certificates to our students who successfully
-                        complete their online Quran courses
+                        Upon successfully completing our online Quran courses, students receive a certificate, acknowledging their dedication and accomplishment in Quranic education.
                     </p>
                 </div>
             </div>
@@ -378,15 +367,12 @@ $course = DB::table('courses')
                 <div class="left_wrapper">
                     <div>
                         <h2 class="heading arsenica_fonts" data-aos-once="true" data-aos="fade-up">
-                            Get a Certificate
+                            Earn Your Certificate with Us
+
                         </h2>
                         <p data-aos-once="true" data-aos="fade-up">
-                            We welcome our users to Online Quran teaching services where
-                            we are offering multiple Islamic as well as character building
-                            and life reformation courses as per the teachings of Sharia.
-                            Thousands of individuals have learned to read Quran with these
-                            online Quran classes service in India and many other
-                            countries of the globe.
+                            Unroll in our Online Quran teaching services and unlock the opportunity to receive a certificate upon completion. Our platform offers a diverse array of Islamic studies, character-building, and life reformation courses in accordance with Sharia teachings. Join the ranks of thousands who have successfully learned to read the Quran through our online classes, available in India and various countries around the world. Seize the chance to enhance your knowledge and receive a certificate upon completing our transformative courses.
+
                         </p>
                         <div>
                             <a target="_blank" href="https://online.gnoa.in/apex/f?p=104:11::::::" class="common_btn"
@@ -440,12 +426,8 @@ $course = DB::table('courses')
                             Our Branches
                         </h2>
                         <p class="mb-0" data-aos-once="true" data-aos="fade-up">
-                            We welcome our users to Online Quran teaching services where
-                            we are offering multiple Islamic as well as character building
-                            and life reformation courses as per the teachings of Sharia.
-                            Thousands of individuals have learned to read Quran with these
-                            online Quran classes service in India and many other
-                            countries of the globe.
+                           Greetings to our valued users, as we extend a warm welcome to our Online Quran Teaching Services. Our platform provides a diverse range of Islamic, character-building, and life reformation courses in alignment with Sharia teachings. Numerous individuals, spanning across India and various countries worldwide, have successfully learned to read the Quran through our online classes. Join the Global Network of Online Academies (GNOA) to embark on a transformative journey of spiritual and personal growth.
+
                         </p>
                         <div>
                             <a href="our-branche.php" class="common_btn max-md-hidden" data-aos-once="true"
@@ -523,27 +505,37 @@ $course = DB::table('courses')
                         <div class="owl-carousel owl-theme" id="testimonial">
                             <div class="item">
                                 <p class="desc" data-aos-once="true" data-aos="fade-up">
-                                    “I just completed Arabic Grammar course and I must say the
-                                    individuals who are teaching online are extremely
-                                    professional and knowledgeable persons. They elaborate
-                                    every doubt of your mind and put it in front of you in a
-                                    very simple manner so we can understand it quickly.”
+                                   Walekum assalam...Mohammad Zayan Hireholi -Bangalore,
+India.Madani qaida aur Quran Sharif course Allhumdulillah,iss
+online course se bht sare difficulty door hui, Kyun ki jo offline
+padhate he,o sahi makhrij nahi sikhatey ...aur iss course ka
+format, example monthly exams ,qawaid ki check,madani
+guldasta waghaira maloomat ki wajese a behtareen he. .bht log
+zayan ka dekhkar faizan online se judgaye mashAllah...Unke
+teacher b acha padate heAgey b yahi arazoo he ki Quran
+Sharif pura hone k baad , meaning se padhane ki niyat he...
+
                                 </p>
-                                <p class="name" data-aos-once="true" data-aos="fade-up">
+                                <!-- <p class="name" data-aos-once="true" data-aos="fade-up">
                                     - Jibran Attari
-                                </p>
+                                </p> -->
                             </div>
                             <div class="item">
                                 <p class="desc" data-aos-once="true" data-aos="fade-up">
-                                    “I just completed Arabic Grammar course and I must say the
-                                    individuals who are teaching online are extremely
-                                    professional and knowledgeable persons. They elaborate
-                                    every doubt of your mind and put it in front of you in a
-                                    very simple manner so we can understand it quickly.”
+                                   W.salamMera naam Akil Hasan haiMe Gondal - Gujrat se
+hu.Me Madni Qaida o Nazra Course me hu.Maine is course se
+ache tarike se quraane paak padhna sikha aur jo qawaid sikhe.
+Iske alawa Islam ki buniyadi baate kitab me se rozana deeni
+malumaat hasil ki.Mashallah se teacher bohot cooperative hai.
+Aur unka samjane ka sikhane ka andaz zabardast hai. Aisa
+lagta hai jaise rubaru me ilm e din Sikh rahe hai. Itni tawajjo k
+sath sikhate hai. Jaha galti ho waha islah bhi farmate hai.Is ke
+alawa system ki baat ki jae to nazim sahb ka control bhi bohot
+behtareen hai.
                                 </p>
-                                <p class="name" data-aos-once="true" data-aos="fade-up">
+                                <!-- <p class="name" data-aos-once="true" data-aos="fade-up">
                                     - Jibran Attari
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                     </div>
