@@ -30,9 +30,7 @@
 
 <section class="course courses_listing">
     <div class="container">
-        <h2 class="heading arsenica_fonts">
-            Our Courses
-        </h2>
+       
         <div class="row">
 
             @foreach ($courses as $row)
@@ -50,7 +48,7 @@
                                 {{ $row->short_description }}
                             </p>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-6">
                                     <div class="social_icons">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -60,7 +58,7 @@
                                         <span>{{ $row->rating }}</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-6">
                                     <div class="arrow_btn_slider">
                                         <a href="{{ url(route('course-detail', ['slug' => $row->slug])) }}"><i
                                                 class="fa-solid fa-arrow-right"></i></a>

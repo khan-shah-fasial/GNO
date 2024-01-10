@@ -155,6 +155,10 @@
     .right_wrapper .content {
         padding: 0px 12px 20px;
     }
+
+    section.course .owl-nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {

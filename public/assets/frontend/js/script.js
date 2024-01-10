@@ -9,14 +9,14 @@ jQuery(document).ready(function ($) {
 $(document).ready(function () {
     var owl = $("#relatedcourse");
     owl.owlCarousel({
-        margin: 20,
+        margin: 15,
         nav: false,
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
         responsive: {
             0: {
-                items: 1,
+                items: 1.1,
             },
             600: {
                 items: 1,
@@ -113,10 +113,10 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
         responsive: {
             0: {
-                items: 1,
+                items: 1.1,
             },
             600: {
-                items: 2,
+                items: 2.1,
             },
             1000: {
                 items: 4,
