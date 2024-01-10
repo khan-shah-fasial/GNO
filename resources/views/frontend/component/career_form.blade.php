@@ -35,8 +35,8 @@
     </div>
     </div>
 
-    <div class="col-md-3">
-        <img src="img/barshi9.jpeg" alt="book" width="320px" height="507px" class="carrer-img">
+    <div class="col-md-4 mt-lg-0 mt-4">
+        <img src="assets/frontend/images/barshi9.jpeg" alt="book" class="carrer-img">
     </div>
 
 

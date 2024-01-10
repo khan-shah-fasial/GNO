@@ -2077,3 +2077,18 @@ select.form-select.select_drp_image.select2.hasCustomSelect {
     height: auto !important;
     font-size: 16px;
 }
+
+.carrer-img {
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+}
+
+a.backhomebutton {
+    padding: 9px 18px !important;
+    background: #007695;
+    border-radius: 14px;
+    transition: all 0.3s;
+    color: #fff;
+    text-decoration: none;
+}

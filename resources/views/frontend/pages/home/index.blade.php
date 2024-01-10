@@ -308,7 +308,7 @@ $course = DB::table('courses')
                     </div>
 
                     <h2 class="font24" data-aos-once="true" data-aos="fade-up">
-                         Gender-Specific Instruction:
+                         Gender-Specific Instruction
                     </h2>
                     <p data-aos-once="true" data-aos="fade-up">
                         Following Sharia principles, we offer separate male and female instructors, creating a comfortable and respectful learning atmosphere for all students.
@@ -321,7 +321,7 @@ $course = DB::table('courses')
                         <img src="assets/frontend/images/why_4.png" alt="" data-aos-once="true" data-aos="fade-up" />
                     </div>
 
-                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Flexibility and Convenience:</h2>
+                    <h2 class="font24" data-aos-once="true" data-aos="fade-up">Flexibility and Convenience</h2>
                     <p data-aos-once="true" data-aos="fade-up">
                        Our 24/7 online availability allows students from around the world to choose class timings that align with their schedules, promoting flexibility and convenience.
                     </p>

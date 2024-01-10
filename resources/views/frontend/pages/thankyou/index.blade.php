@@ -13,7 +13,7 @@
 <!--  ----------------- Thank You --------------------- -->
 
 
-<section class="thankyou_page pd80 bg_image2 text-center">
+<section class="thankyou_page pd80 bg_image2 text-center pt-5 pb-5">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
