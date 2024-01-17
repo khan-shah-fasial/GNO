@@ -61,7 +61,7 @@
                     </div>
                     <h4>Address</h4>
                     <p>Faizane Madina Dawateislami India 50,Tantanpura Street Khadak Police Chowki Mumbai 400009
-                        Maharshtra</p>
+                        Maharashtra</p>
                 </div>
             </div>
 

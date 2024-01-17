@@ -323,7 +323,7 @@ $course = DB::table('courses')
 
                     <h2 class="font24" data-aos-once="true" data-aos="fade-up">Flexibility and Convenience</h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                       Our 24/7 online availability allows students from around the world to choose class timings that align with their schedules, promoting flexibility and convenience.
+                       Our 17hrs online availability allows students from around the world to choose class timings that align with their schedules, promoting flexibility and convenience.
                     </p>
                 </div>
             </div>

@@ -18,11 +18,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="inner_titles text-center">Our Branche</h4>
+                <h4 class="inner_titles text-center">Our Branches</h4>
                 <nav aria-label="breadcrumb" class="breadcrumb mb-0">
                     <ol class="breadcrumb d-flex justify-content-center mb-0">
                         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                        <li class="breadcrumb-item">Our Branche</li>
+                        <li class="breadcrumb-item">Our Branches</li>
                     </ol>
                 </nav>
             </div>
@@ -194,7 +194,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="left_wrapper textjustify">
-                    <h4 class="branch_heading mb-3 mt-5 blue_clr text-center">Cutteck</h4>
+                    <h4 class="branch_heading mb-3 mt-5 blue_clr text-center">Cuttack</h4>
                 </div>
             </div>
 

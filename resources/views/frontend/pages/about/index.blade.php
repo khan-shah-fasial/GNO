@@ -66,7 +66,7 @@
                     highly qualified. Most of them are Hafiz/Hafiza And Alim/Alima Teacher.</p>
                 <p class="me-lg-4" data-aos-once="true" data-aos="fade-up">Thousands of individuals have learned to read
                     the Quran with these online Quran classes service in India and many other countries of the globe. we
-                    are providing 16-hour service Quran Classes to our students so that students can adjust their
+                    are providing 17-hour service Quran Classes to our students so that students can adjust their
                     tutorial timings according to their availability, ease and comfort.</p>
                 <p class="me-lg-4" data-aos-once="true" data-aos="fade-up">People of all ages can study in this department.
                     For example, children, men and women, elderly women, elderly men. The department has a complete

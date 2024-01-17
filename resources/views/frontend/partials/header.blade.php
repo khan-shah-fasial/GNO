@@ -99,7 +99,7 @@
                              <a class="nav-link" href="about-us">About Us</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="our-branche">Our Branche</a>
+                             <a class="nav-link" href="our-branche">Our Branches</a>
                          </li>
                          <li class="nav-item">
                              <a class="nav-link" href="contact-us">Contact Us</a>
@@ -180,7 +180,7 @@
                          </div>
 </li>
 <li><label> <a href="about-us">About Us</a></label></li>
-<li><label> <a href="our-branche">Our Branche</a></label></li>
+<li><label> <a href="our-branche">Our Branches</a></label></li>
 <li><label> <a href="contact-us">Contact Us</a></label></li>
 
                  </ul>

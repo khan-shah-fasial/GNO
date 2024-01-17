@@ -14,7 +14,7 @@
                                  </p>
                                  <p data-aos-once="true" data-aos="fade-up">
                                      Faizane Madina Dawateislami India 50,Tantanpura Street Khadak Police Chowki Mumbai
-                                     400009 Maharshtra
+                                     400009 Maharashtra
                                  </p>
                                  <p class="mb-0">
                                      <a href="mailto:support@gnoa.in" data-aos-once="true"
@@ -39,7 +39,7 @@
                              <ul data-aos-once="true" data-aos="fade-up">
                                  <li><a href="about-us">About Us </a></li>
                                  <li><a href="courses">Courses </a></li>
-                                 <li><a href="our-branche">Our Branche </a></li>
+                                 <li><a href="our-branche">Our Branches </a></li>
                                  <li><a href="career">Career</a></li>
                              </ul>
                          </div>
@@ -55,7 +55,7 @@
                                      <a href="privacy-policy"> Privacy Policy </a>
                                  </li>
                                  <li>
-                                     <a href="term-condition"> Term & Condition </a>
+                                     <a href="term-condition"> Terms & Conditions </a>
                                  </li>
 
                                  <li>
