@@ -58,9 +58,9 @@
                                      <a href="terms-conditions"> Terms & Conditions </a>
                                  </li>
 
-                                 <li>
+                                 <!-- <li>
                                      <a href="#"> Donation</a>
-                                 </li>
+                                 </li> -->
                              </ul>
                          </div>
 

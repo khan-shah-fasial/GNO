@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="inner_titles text-center">Term & Condition</h4>
+                <h4 class="inner_titles text-center">Terms & Conditions</h4>
                 <nav aria-label="breadcrumb" class="breadcrumb mb-0">
                     <ol class="breadcrumb d-flex justify-content-center mb-0">
                         <li class="breadcrumb-item"><a href="index.php">Home</a></li>

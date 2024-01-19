@@ -74,7 +74,6 @@
                                  border-top-right-radius: 0;
                                  ">
                                  <div class="row">
-
                                      <div class="col-md-10 col-lg-10 mb-3 mb-lg-0">
                                          <div class="list-group list-group-flush">
                                              @foreach ($course as $row)
@@ -83,11 +82,8 @@
                                                      {{ $row->title }}
                                                  </a>
                                              @endforeach
-
                                          </div>
                                      </div>
-
-
                                      <div class="col-md-2 col-lg-2">
                                          <img class="menu_img" src="assets/frontend/images/dhanu3.jpeg">
                                      </div>
@@ -104,9 +100,9 @@
                          <li class="nav-item">
                              <a class="nav-link" href="contact-us">Contact Us</a>
                          </li>
-                         <li class="nav-item login_btn pdrght40">
+                         <!-- <li class="nav-item login_btn pdrght40">
                              <a class="nav-link" href="donation.php">Donation</a>
-                         </li>
+                         </li> -->
                          <!-- Navbar dropdown -->
                      </ul>
                      <!-- Left links -->

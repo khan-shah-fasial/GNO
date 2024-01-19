@@ -60,7 +60,7 @@
                         </button>
                     </div>
                 </div>
-                  <div class="col-md-4 sticky d-lg-none d-block mt-4">
+                  <div class="col-lg-4 sticky d-lg-none d-block mt-4">
                     <div class="right_wrapper courseTop">
                         <div class="course_dtimg">
                             <img src="{{ asset('storage/' . $detail->image) }}" alt="{{ $detail->alt_image }}" />
