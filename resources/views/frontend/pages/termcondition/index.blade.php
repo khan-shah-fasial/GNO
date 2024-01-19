@@ -17,7 +17,7 @@
                 <nav aria-label="breadcrumb" class="breadcrumb mb-0">
                     <ol class="breadcrumb d-flex justify-content-center mb-0">
                         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                        <li class="breadcrumb-item">Term & Condition</li>
+                        <li class="breadcrumb-item">Terms & Conditions</li>
                     </ol>
                 </nav>
             </div>

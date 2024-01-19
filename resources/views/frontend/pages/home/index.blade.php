@@ -371,7 +371,7 @@ $course = DB::table('courses')
 
                         </h2>
                         <p data-aos-once="true" data-aos="fade-up">
-                            Unroll in our Online Quran teaching services and unlock the opportunity to receive a certificate upon completion. Our platform offers a diverse array of Islamic studies, character-building, and life reformation courses in accordance with Sharia teachings. Join the ranks of thousands who have successfully learned to read the Quran through our online classes, available in India and various countries around the world. Seize the chance to enhance your knowledge and receive a certificate upon completing our transformative courses.
+                            Unroll in our Online Quran teaching services and unlock the opportunity to receive a certificate upon completion. Our platform offers a diverse array of Islamic studies, character-building, and life reformation courses in accordance with Sharia teachings. Join the ranks of thousands who have successfully learned to read the Quran through our online classes, available in India. Seize the chance to enhance your knowledge and receive a certificate upon completing our transformative courses.
 
                         </p>
                         <div>
