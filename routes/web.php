@@ -57,10 +57,10 @@ Route::get('/course/{slug}', [IndexController::class, 'course_detail'])->name('c
 
 Route::get('/contact-us', [IndexController::class, 'contact_us'])->name('contact');
 Route::any('/about-us', [IndexController::class, 'about_us'])->name('about');
-Route::get('/our-branche', [IndexController::class, 'our_branche'])->name('branche');
+Route::get('/our-branches', [IndexController::class, 'our_branche'])->name('branche');
 Route::get('/career', [IndexController::class, 'career'])->name('career');
 Route::get('/privacy-policy', [IndexController::class, 'privacy_policy'])->name('privacy-policy');
-Route::get('/term-condition', [IndexController::class, 'term_condition'])->name('term-condition');
+Route::get('/terms-conditions', [IndexController::class, 'term_condition'])->name('term-condition');
 
 Route::get('/404', [IndexController::class, 'not_found'])->name('error_page');
 Route::get('/thank-you', [IndexController::class, 'thank_you'])->name('thank_you');

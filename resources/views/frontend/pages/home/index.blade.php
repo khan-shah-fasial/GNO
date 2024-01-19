@@ -24,7 +24,7 @@ $course = DB::table('courses')
         <div class="carousel-inner">
             <div class="carousel-item active hvr-bounce-in">
                 <div class="banner">
-                    <a href="">
+                    <a href="/">
                         <img src="assets/frontend/images/slider_banner1.jpg" class="d-block w-100" alt="..." />
                         <img src="assets/frontend/images/children2.png" alt="" class="children" />
                     </a>
@@ -32,7 +32,7 @@ $course = DB::table('courses')
             </div>
             <div class="carousel-item hvr-bounce-in">
                 <div class="banner">
-                    <a href="#">
+                    <a href="/">
                         <img src="assets/frontend/images/slider_banner2.jpg" class="d-block w-100" alt="..." />
                         <img src="assets/frontend/images/bhare.png" alt="" class="children" />
                     </a>
@@ -323,7 +323,7 @@ $course = DB::table('courses')
 
                     <h2 class="font24" data-aos-once="true" data-aos="fade-up">Flexibility and Convenience</h2>
                     <p data-aos-once="true" data-aos="fade-up">
-                       Our 17hrs online availability allows students from around the world to choose class timings that align with their schedules, promoting flexibility and convenience.
+                       Our 17 hrs online availability allows students from around the world to choose class timings that align with their schedules, promoting flexibility and convenience.
                     </p>
                 </div>
             </div>
@@ -430,7 +430,7 @@ $course = DB::table('courses')
 
                         </p>
                         <div>
-                            <a href="our-branche.php" class="common_btn max-md-hidden" data-aos-once="true"
+                            <a href="our-branches" class="common_btn max-md-hidden" data-aos-once="true"
                                 data-aos="fade-up">
                                 View all Other Branches
                             </a>

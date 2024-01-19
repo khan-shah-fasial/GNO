@@ -49,7 +49,7 @@
                      <!-- Left links -->
                      <ul class="navbar-nav me-auto ps-lg-0 pdleft40">
                          <li class="nav-item">
-                             <a href="index.php">
+                             <a href="/">
                                  <img class="logo_width" src="assets/frontend/images/logo.png" alt="" />
                              </a>
                          </li>
@@ -61,7 +61,7 @@
                      <ul class="navbar-nav ms-auto ps-lg-0">
 
                          <li class="nav-item">
-                             <a class="nav-link" href="{{ url(route('index')) }}">Home</a>
+                             <a class="nav-link" href="/">Home</a>
                          </li>
                          <li class="nav-item dropdown dropdown-hover position-static">
                              <a class="nav-link dropdown-toggle" href="{{ url(route('courses')) }}" id="navbarDropdown"
@@ -99,7 +99,7 @@
                              <a class="nav-link" href="about-us">About Us</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="our-branche">Our Branches</a>
+                             <a class="nav-link" href="our-branches">Our Branches</a>
                          </li>
                          <li class="nav-item">
                              <a class="nav-link" href="contact-us">Contact Us</a>

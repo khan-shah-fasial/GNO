@@ -1229,7 +1229,7 @@ section.course .owl-carousel .owl-stage-outer {
     color: #f7ae6a;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
     color: #ffffff !important;
 }
 
@@ -1402,10 +1402,10 @@ textarea:focus {
     border-bottom: 1px solid #000;
 }
 
-.contact_from input:valid+label,
-textarea:valid+label,
-textarea:focus+label,
-input:focus+label {
+.contact_from input:valid + label,
+textarea:valid + label,
+textarea:focus + label,
+input:focus + label {
     top: 15px;
     color: #5b5b5b;
 }
@@ -1517,7 +1517,6 @@ input:focus+label {
     border-color: #d8d8d8;
     width: 100%;
     font-size: 14px;
-    ;
 }
 
 :focus-visible {
@@ -1972,11 +1971,11 @@ section.why_choose .font24 {
     color: rgb(238 169 67) !important;
 }
 
-.dropdown-hover:hover>.dropdown-menu {
+.dropdown-hover:hover > .dropdown-menu {
     display: inline-block;
 }
 
-.dropdown-hover>.dropdown-toggle:active {
+.dropdown-hover > .dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
@@ -2091,4 +2090,9 @@ a.backhomebutton {
     transition: all 0.3s;
     color: #fff;
     text-decoration: none;
+    transition: all 0.3s;
+}
+a.backhomebutton:hover {
+    color: white;
+    background: #eea943;
 }

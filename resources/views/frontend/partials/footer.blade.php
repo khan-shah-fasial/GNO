@@ -39,7 +39,7 @@
                              <ul data-aos-once="true" data-aos="fade-up">
                                  <li><a href="about-us">About Us </a></li>
                                  <li><a href="courses">Courses </a></li>
-                                 <li><a href="our-branche">Our Branches </a></li>
+                                 <li><a href="our-branches">Our Branches </a></li>
                                  <li><a href="career">Career</a></li>
                              </ul>
                          </div>
@@ -55,7 +55,7 @@
                                      <a href="privacy-policy"> Privacy Policy </a>
                                  </li>
                                  <li>
-                                     <a href="term-condition"> Terms & Conditions </a>
+                                     <a href="terms-conditions"> Terms & Conditions </a>
                                  </li>
 
                                  <li>
