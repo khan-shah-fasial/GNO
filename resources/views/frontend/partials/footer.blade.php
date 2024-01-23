@@ -4,7 +4,7 @@
              <div class="col-md-12">
                  <div class="footer_top">
                      <div class="row">
-                         <div class="col-md-4">
+                         <div class="col-lg-4 col-md-6">
                              <div class="info_wrapper">
                                  <h3 class="title" data-aos-once="true" data-aos="fade-up">
                                      Connect To Quran Teacher
@@ -32,7 +32,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="col-md-2 col-6 mt-md-0 mt-4">
+                         <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-4">
                              <h3 class="title" data-aos-once="true" data-aos="fade-up">
                                  Quick Links
                              </h3>
@@ -43,7 +43,7 @@
                                  <li><a href="career">Career</a></li>
                              </ul>
                          </div>
-                         <div class="col-md-2 col-6 mt-md-0 mt-4">
+                         <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-4">
                              <h3 class="title" data-aos-once="true" data-aos="fade-up">
                                  Quick Links
                              </h3>
@@ -72,7 +72,7 @@
                  </div>
              </div>
              <hr />
-             <div class="col-md-12">
+             <div class="col-lg-12 col-md-12">
                  <div class="footer_bottom">
                      <a href="https://online.gnoa.in/apex/f?p=104:11::::::"
                          target="_blank"><button>Registration</button></a>

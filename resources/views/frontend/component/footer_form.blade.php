@@ -6,7 +6,7 @@
 
 <!-----------================= Footer form start =============--------------->
 
-<div class="col-md-4">
+<div class="col-lg-4 col-md-12">
     <h3 class="title">Enquire Now</h3>
     <form class="contact_form" id="add_footer_form" action="{{ url(route('contact.create')) }}" method="post"
         enctype="multipart/form-data">

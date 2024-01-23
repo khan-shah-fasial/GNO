@@ -1229,7 +1229,7 @@ section.course .owl-carousel .owl-stage-outer {
     color: #f7ae6a;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #ffffff !important;
 }
 
@@ -1402,10 +1402,10 @@ textarea:focus {
     border-bottom: 1px solid #000;
 }
 
-.contact_from input:valid + label,
-textarea:valid + label,
-textarea:focus + label,
-input:focus + label {
+.contact_from input:valid+label,
+textarea:valid+label,
+textarea:focus+label,
+input:focus+label {
     top: 15px;
     color: #5b5b5b;
 }
@@ -1971,11 +1971,11 @@ section.why_choose .font24 {
     color: rgb(238 169 67) !important;
 }
 
-.dropdown-hover:hover > .dropdown-menu {
+.dropdown-hover:hover>.dropdown-menu {
     display: inline-block;
 }
 
-.dropdown-hover > .dropdown-toggle:active {
+.dropdown-hover>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
@@ -2048,7 +2048,7 @@ section.footer span.customSelect.form-select.select_drp_image {
 }
 
 .dropdown-menu .list-group-item {
-    flex: 1 0 25%;
+    width: 25%;
     /* Adjust the percentage based on your preference */
     box-sizing: border-box;
     padding: 10px;
@@ -2092,6 +2092,7 @@ a.backhomebutton {
     text-decoration: none;
     transition: all 0.3s;
 }
+
 a.backhomebutton:hover {
     color: white;
     background: #eea943;

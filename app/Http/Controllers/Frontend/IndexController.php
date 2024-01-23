@@ -225,7 +225,7 @@ class IndexController extends Controller
         //$user_data = json_decode(session('user_ip'), true);
 
 
-        $recipient = 'khanfaisal.makent@gmail.com'; // Replace with the actual recipient email
+        $recipient = 'support@gnoa.in'; // Replace with the actual recipient email
         $subject = 'Lead Enquiry';
     
 

@@ -176,8 +176,22 @@
         margin-top: 0;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
     .right_wrapper .content {
         padding: 0px 12px 20px;
+    }
+
+    .testimonial .wrapper div .desc {
+        padding: 0px 100px;
+    }
+
+    .heading {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 45px;
     }
 
     .logo_width_mobile {
@@ -222,6 +236,14 @@
 
     .course_content .right_wrapper {
         display: none;
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .dropdown-menu .list-group-item {
+        width: 31%;
+        box-sizing: border-box;
+        padding: 10px;
     }
 }
 
@@ -383,11 +405,11 @@ nav .m-menu .m-menu label.m-menu__toggle {
     box-sizing: content-box;
 }
 
-nav .m-menu__checkbox:checked ~ .m-menu__overlay {
+nav .m-menu__checkbox:checked~.m-menu__overlay {
     display: block;
 }
 
-nav .m-menu__checkbox:checked ~ .m-menu {
+nav .m-menu__checkbox:checked~.m-menu {
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);

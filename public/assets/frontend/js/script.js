@@ -19,7 +19,7 @@ $(document).ready(function () {
                 items: 1.1,
             },
             600: {
-                items: 1,
+                items: 2,
             },
             1000: {
                 items: 4,
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 items: 1,
             },
             600: {
-                items: 1,
+                items: 2,
             },
             1000: {
                 items: 2.2,
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 items: 1,
             },
             600: {
-                items: 1,
+                items: 2,
             },
             1000: {
                 items: 1,
